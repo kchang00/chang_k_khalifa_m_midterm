@@ -4,3 +4,140 @@
 .hidden {
 	display: none;
 }
+
+#container {
+	display: flex;
+	flex-direction: column;
+	width: 960px;
+	margin: 0 auto;
+/*	background-color: tomato;*/
+}
+
+.btnLargeJoin {
+	height: 60px;
+	width: 150px;
+	font-size: 24px;
+	color: #000;
+	background-color: #fff;
+}
+
+/* === MAIN FOOTER === */
+
+#mainFooter {
+	display: flex;
+	flex-direction: column;
+	width: 960px;
+	padding: 40px 60px;
+	background-color: #333;
+}
+
+#mainFooter h3 {
+	font-size: 24px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+#mainFooter p {
+	font-size: 14px;
+	margin-bottom: 15px;
+	color: #ccc;
+}
+
+#mainFooterCon {
+	display: flex;
+	flex-direction: row;
+}
+
+/* Newsletter and Social Media Container */
+
+#newsSocCon {
+	display: flex;
+	flex-direction: column;
+}
+
+.text {
+	height: 40px;
+	width: 260px;
+}
+
+.subBut {
+	/* let icon define height*/
+	height: 40px;
+	width: 40px;
+	margin-left: 2px;
+	background-color: #ccc;
+}
+
+#mainFooterSocialNav ul {
+	display: flex;
+	flex-direction: row;
+/*	background-color: tomato;*/
+}
+
+.socialIcon {
+	/* let icon define height*/
+	height: 40px;
+	width: 40px;
+	margin-right: 20px;
+	margin-top: 30px;
+	background-color: #666;
+}
+
+/* Contact Blurb */
+
+#mainFooterContact {
+	margin-left: auto;
+	padding-left: 40px;
+}
+
+#mainFooterContact a {
+	color: #fff;
+}
+
+/* Footer Navigation */
+
+#mainFooterNav {
+	border-right: 2px solid #ccc;
+	margin-right: 40px;
+	padding-right: 40px;
+}
+
+#mainFooterNav a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+/* Footer Logo */
+
+#mainFooterLogo {
+	/* let logo define height*/
+	height: 150px;
+	width: 150px;
+	background-color: #666;
+
+}
+
+/* Bottom Footer */
+
+#mainFooterBottom {
+	margin-top: 80px;
+	font-size: 14px;
+	color: #ccc;
+}
+
+#mainFooterBottom ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+/*	background-color: tomato;*/
+}
+
+#mainFooterBottom ul li:nth-child(2), 
+#mainFooterBottom ul li:nth-child(3) {
+	margin-right: 40px;
+}
+
+#mainFooterBottom ul li:first-child {
+
+	margin-right: auto;
+} /* END MAIN FOOTER */

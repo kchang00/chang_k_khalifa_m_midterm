@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>TRAA</title>
+<title>TRAA | Home</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<div id="container">
-		<h1 class="hidden">TRAA</h1>
+		<h1 class="hidden">TRAA Home</h1>
 
 		<header id="mainHeader">
 			<img src="images/logo.svg" alt="logo" width="" height="" id="headerLogo">
@@ -22,6 +22,7 @@
 				</ul>
 			</div>
 			<nav id="mainNav">
+			<h2 class="hidden">Main Navigation</h2>
 				<ul>
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="about.html">WHO WE ARE</a></li>
@@ -31,9 +32,68 @@
 			</nav>
 		</header>
 
-		
+		<footer id="mainFooter">
+			<h2 class="hidden">Footer Navigation</h2>
+			<div id="mainFooterCon">
+				<div id="newsSocCon">
+					<section id="newsletter">
+					<h3>Keep In Touch</h3>
+						<p>Subscribe to get updates about the TRAA and our newsletter. It’s FREE!</p>
+						<form action="form.php" method="POST" autocomplete="off">
+		                    <input class="text" type="text" required id="name" placeholder="Enter your Email" size="30" name="email"/>
+		                    <input class="subBut" type="submit" name="submit" value=">"/>
+		                </form><!--end form-->
+					</section>
+
+					<nav id="mainFooterSocialNav">
+					<h3 class="hidden">Social Media Navigation</h3>
+						<ul>
+							<li class="socialIcon"><a href="https://twitter.com" target="_blank"></a></li>
+	                        <li class="socialIcon"><a href="https://www.instagram.com" target="_blank"></a></li>
+	                        <li class="socialIcon"><a href="https://www.facebook.com" target="_blank"></a></li>
+	                        <li class="socialIcon"><a href="https://www.youtube.com" target="_blank"></a></li>
+		              	</ul>
+					</nav>
+				</div>
+
+				<section id="mainFooterContact">
+				<h3>Contact Us</h3>
+					<p> We meet every second Wednesday at 790 Southdale Road East<br> London, ON N6E 1A8 </p>
+					<p>Phone: (519) 681-2370</p>
+					<p><a href="contact.html">Send Us a Message ></a></p>
+				</section>
+
+				<nav id="mainFooterNav">
+				<h3>Navigation</h3>
+					<ul>
+						<li><a href="about.html">Who We Are</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="project.html">Our Work</a></li>
+						<li><a href="#"></a>Events</li>
+						<li><a href="#"></a>Education</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+
+				<section id="mainFooterJoin">
+				<h3 class="hidden">Join Us Button</h3>
+				<!-- replace with logo -->
+					<div id="mainFooterLogo"></div>
+					<button class="btnLargeJoin">JOIN NOW</button>
+				</section>
+			</div>
+			<nav id="mainFooterBottom">
+				<h3 class="hidden">Footer Bottom Links</h3>
+				<ul>
+					<li>Copyright © Thames River Anglers Association</li>
+					<li><a href="#"></a>Sitemap</li>
+					<li><a href="#"></a>Terms and Conditions</li>
+					<li><a href="#"></a>Privacy Policy</li>
+				</ul>
+			</nav>
+		</footer>
 	</div>
-	
+	<!-- JavaScript -->
 	<script src="js/main.js"></script>
 </body>
 </html>

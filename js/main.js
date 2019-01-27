@@ -1,3 +1,7 @@
+// for testing purposes
+
+/*
+
 // create a pickle jar, labeled as test, put string in it
 // string = text inside
 var test = "working";
@@ -11,3 +15,5 @@ alert(`JS is ${test} !!!`);
 //console.log(test);
 
 console.log("JavaScript is linked");
+
+*/
