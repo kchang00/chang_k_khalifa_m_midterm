@@ -13,6 +13,55 @@
 /*	background-color: tomato;*/
 }
 
+/* header */
+
+#mainHeader {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#headerLogo {
+	width: 121px;
+	height: 60px;
+	background-color: #ccc;
+}
+
+#headerSocialMedia ul {
+	display: flex;
+	justify-content: flex-start;
+}
+
+#headerSocialMedia img {
+	width: 25px;
+	height: 25px;
+	background-color: #ccc;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#mainNav 
+{
+	margin-left: 80px;
+}
+
+#mainNav ul li
+{
+	display: inline;	
+}
+
+#mainNav ul li a {
+	font-size: 20px;
+	color: #666;
+	text-decoration: none;
+	padding: 20px;
+}
+
+#mainNav ul li a:hover {
+	background-color: #ccc;
+	transition: all .5s ease;
+}
+
 .btnLargeJoin {
 	height: 60px;
 	width: 150px;
