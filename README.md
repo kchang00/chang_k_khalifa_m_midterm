@@ -22,3 +22,10 @@ Created index.html with header, pull request to merge with master.
 - Fix black "Navigation" links
 - Check form format for button
 - Strange spacing with container (not centered) ???
+
+01/30/19 6:47pm ->des.kc.html - Kayla
+
+- Fixed footer padding + width issue (forgot to factor padding in width)
+- Cleaned up mainNav
+- Created events widget, about section on homepage and impact section
+- Fix weird spacing issues (line heights, margin, about section)?
