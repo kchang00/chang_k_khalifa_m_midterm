@@ -1,6 +1,12 @@
 @charset "UTF-8";
 /*CSS Document*/
 
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
 .hidden {
 	display: none;
 }
@@ -10,15 +16,263 @@
 	flex-direction: column;
 	width: 960px;
 	margin: 0 auto;
-/*	background-color: tomato;*/
+	background-color: #ececec;
 }
 
-.btnLargeJoin {
+/*  === BUTTONS === */
+
+.btnSmall {
+	height: 40px;
+	width: 160px;
+	font-size: 18px;
+	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
+	margin: 5px;
+}
+
+.btnLarge {
 	height: 60px;
 	width: 150px;
 	font-size: 24px;
-	color: #000;
+	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
+}
+
+.dark {
+	background-color: #333;
+	color: #fff;
+}
+
+.light {
+	background-color: #ccc;
+	color: #333;
+}
+
+
+/* === HEADER === */
+
+#mainHeader {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#headerLogo {
+	width: 121px;
+	height: 60px;
+	background-color: #ccc;
+}
+
+/* Social Media */
+
+#headerSocialMedia ul {
+	display: flex;
+	justify-content: flex-start;
+}
+
+#headerSocialMedia img {
+	width: 25px;
+	height: 25px;
+	background-color: #ccc;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+/* Main Navigation */
+
+#mainNav {
+	display: flex;
+	margin-left: auto;
+}
+
+#mainNav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#mainNav li {
+	display: inline;
+}
+
+#mainNav ul li a {
+	font-size: 20px;
+	color: #666;
+	text-decoration: none;
+	padding: 20px;
+}
+
+#mainNav ul li a:hover {
+	background-color: #ccc;
+	transition: all .5s ease;
+}
+
+/* Hero */
+
+#hero {
+  	background-color: #999;
+/*	position: absolute;*/
+  	width: 960px;
+  	height: 408px;
+  	margin-bottom: 40px;
+}
+
+/* === HOME- WELCOME SECTION=== */
+
+#welcome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#welcomeDesc {
+	width: 840px;
+	/*let content dictate height*/
+	height: 83px;
+	background-color: #ccc;
+	margin: 40px 0px;
+	font-weight: bold;
+}
+
+/* === EVENTS === */
+
+#eventsWidget {
+	display: flex;
+	flex-direction: column;
+	background-color: #ccc;
+	padding: 20px;
+	margin-bottom: 40px;
+
+}
+
+#events {
+	display: flex;
+	flex-direction: row;
+/*	width: 840px;
+	overflow: scroll;*/
+}
+
+.event {
+	display: flex;
+	flex-direction: column;
+	width: 184px;
+	height: 137px;
+	margin: 20px 10px;
+	padding: 24px;
 	background-color: #fff;
+	box-shadow: 0px 7px 4px 0px rgba(31, 29, 30, 0.35);
+}
+
+.dateTitleCon {
+	display: flex;
+	flex-direction: row;
+}
+
+.date {
+	text-transform: uppercase;
+  	text-align: left;
+  	border-right: 3px solid #666;
+}
+
+.day {
+  font-size: 24px;
+}
+.month {
+  font-size: 36px;
+}
+
+.title {
+  font-size: 18px;
+  text-align: left;
+}
+
+.eventDesc {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  text-align: left;
+}
+
+#eventsWidget button{
+	margin: 0 auto;
+}
+
+/* === HOME - ABOUT SECTION === */
+
+#about {
+	display: flex;
+	flex-direction: column;
+	width: 840px;
+	margin: 0 auto;
+}
+
+/*replace with image*/
+#aboutImg {
+	width: 840px;
+	height: 250px;
+	background-color: #999;
+}
+
+#aboutCon {
+	width: 760px;
+	/*let content dictate height*/
+	padding: 40px;
+	background-color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#aboutDesc {
+	margin: 40px 0px;
+}
+
+#statements {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+}
+
+#statements div:nth-child(3) {
+	border-right: 3px solid #666;
+	border-left: 3px solid #666;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.statement {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 190px;
+}
+
+/*replace with icon*/
+.statementIcon {
+	width: 110px;
+	height: 110px;
+	background-color: #666;
+}
+
+.statementTitle {
+	font-weight: bold;
+	margin: 15px 0px 20px 0px;
+}
+
+/* === HOME - IMPACT SECTION === */
+
+#impact {
+	background-color: #ccc;
+	padding: 40px;
+}
+
+#impact h2 {
+	margin-bottom: 40px;
+}
+
+#impact p {
+	text-align: center;
+}
+
+.btnCon {
+	display: flex;
+	justify-content: center;
 }
 
 /* === MAIN FOOTER === */
@@ -26,9 +280,9 @@
 #mainFooter {
 	display: flex;
 	flex-direction: column;
-	width: 960px;
-	padding: 40px 60px;
+	width: 840px;
 	background-color: #333;
+	padding: 40px 60px;
 }
 
 #mainFooter h3 {
@@ -53,6 +307,7 @@
 #newsSocCon {
 	display: flex;
 	flex-direction: column;
+	max-width: 340px;
 }
 
 .text {
@@ -86,8 +341,9 @@
 /* Contact Blurb */
 
 #mainFooterContact {
-	margin-left: auto;
-	padding-left: 40px;
+	max-width: 150px;
+	margin-left: 40px; 
+	margin-right: 20px;
 }
 
 #mainFooterContact a {
@@ -99,7 +355,7 @@
 #mainFooterNav {
 	border-right: 2px solid #ccc;
 	margin-right: 40px;
-	padding-right: 40px;
+	padding-right: 30px;
 }
 
 #mainFooterNav a {
@@ -114,7 +370,6 @@
 	height: 150px;
 	width: 150px;
 	background-color: #666;
-
 }
 
 /* Bottom Footer */
