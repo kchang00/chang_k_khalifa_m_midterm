@@ -96,6 +96,7 @@ h2 {
 	background-color: #666;
 }
 
+
 /* Social Media */
 
 #headerSocialMedia ul {
@@ -638,6 +639,7 @@ h2 {
  	justify-content: space-between;
  	width: 840px;
  	margin-top: 40px;
+ 	margin-bottom: 40px;
  }
 
  #genMeeting {
@@ -748,4 +750,9 @@ h2 {
 	background-color: #fff;
 }
 
-
+#contactForm input:last-child {
+	background-color: #ccc;
+	width: 160px;
+	height: 60px;
+	margin-left: 333px;
+}
