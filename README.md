@@ -39,3 +39,12 @@ Created index.html with header, pull request to merge with master.
 	- About TRAA button spacing (in between buttons)
 	- Latest news button margin top spacing
 - Do typography
+
+01/30/19 11:00 => des.mk.contact Mariam
+- contact page crated 
+- submit button issues
+
+01/30/19 11:30 -> des.mk.contact - Mariam
+- fixed the submit button
+- added events widget
+- added home link to logo in contact and index page
