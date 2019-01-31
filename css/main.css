@@ -572,9 +572,6 @@ h2 {
 	position: relative;
 }
 
-#heroContactImage {
-
-}
 
 .hero h2 {
 	font-size: 48px;
@@ -636,7 +633,7 @@ h2 {
 
  #genMeetingAndForm {
  	display: flex;
- 	justify-content: space-between;
+ 	justify-content: flex-start;
  	width: 840px;
  	margin-top: 40px;
  	margin-bottom: 40px;
@@ -645,6 +642,7 @@ h2 {
  #genMeeting {
  	width: 333px;
  	height: 510px;
+ 	margin-left: 50px;
  	background-color: #ccc;
  	display: flex;
  	flex-direction: column;
@@ -728,6 +726,7 @@ h2 {
 #form {
 	width: 460px;
 	height: 510px;
+	margin-left: 40px;
 }
 
 #contactForm input {
@@ -756,3 +755,113 @@ h2 {
 	height: 60px;
 	margin-left: 333px;
 }
+
+/* === JOIN === */
+
+#mainJoin {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#mainJoin h3 {
+	font-size: 30px;
+	color: #666;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#mainJoin p {
+	font-size: 20px;
+	color: #666;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#mainJoin p span {
+	font-weight: bold;
+}
+
+#joinProcess {
+	display: flex;
+	margin-left: 100px;
+	margin-top: 40px;
+	background-color: #666;
+	width: 760px;
+	height: 50px;
+}
+
+#joinProcess ol {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#joinProcess ol li {
+	display: inline;
+	font-size: 20px;
+	color: #fff;
+	padding: 5px;
+}
+
+#joinProcess ol li:first-child {
+	margin-left: 20px;
+}
+
+#joinProcess ol li:nth-child(2) {
+	margin-left: 155px;
+}
+
+#joinProcess ol li:last-child {
+	margin-left: 210px;
+}
+
+#joinInfoAndForm {
+	display: flex;
+ 	justify-content: space-between;
+ 	width: 840px;
+ 	margin-top: 40px;
+ 	margin-bottom: 40px;
+}
+
+#joinInfo {
+	width: 333px;
+ 	height: 510px;
+ 	background-color: #ccc;
+ 	margin-left: 50px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: flex-start;
+}
+
+#joinInfo p {
+	font-size: 20px;
+	color: #fff;
+	text-align: left;
+	margin-left: 20px;
+	padding-right: 10px;
+	text-align: center;
+	margin-top: 150px;
+}
+
+#joinInfo ul
+{
+	margin-top: 80px;
+	margin-left: 50px;
+}
+
+#joinInfo ul li {
+	font-size: 18px;
+	color: #fff;
+	text-align: left;
+	list-style-type: circle;
+	padding: 5px;
+	padding-right: 30px;
+}
+
+#joinForm {
+	width: 460px;
+	height: 510px;
+	margin-left: 40px;
+}
+
