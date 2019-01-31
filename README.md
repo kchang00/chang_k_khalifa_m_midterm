@@ -23,9 +23,19 @@ Created index.html with header, pull request to merge with master.
 - Check form format for button
 - Strange spacing with container (not centered) ???
 
-01/30/19 6:47pm ->des.kc.html - Kayla
+01/30/19 6:47pm -> des.kc.html -> des.kc.scaffold - Kayla
 
 - Fixed footer padding + width issue (forgot to factor padding in width)
 - Cleaned up mainNav
 - Created events widget, about section on homepage and impact section
 - Fix weird spacing issues (line heights, margin, about section)?
+
+10:40pm -> des.kc.scaffold - Kayla
+
+- Finished most of homepage scaffolding
+- Alignment issues:
+	- Upcoming event card text spacing
+	- About TRAA mission statement section
+	- About TRAA button spacing (in between buttons)
+	- Latest news button margin top spacing
+- Do typography

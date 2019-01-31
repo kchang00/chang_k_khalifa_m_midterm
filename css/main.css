@@ -1,10 +1,18 @@
 @charset "UTF-8";
 /*CSS Document*/
 
+h1 {
+	font-size: 45px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 h2 {
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .hidden {
@@ -20,6 +28,11 @@ h2 {
 }
 
 /*  === BUTTONS === */
+
+.btnCon {
+	display: flex;
+	justify-content: center;
+}
 
 .btnSmall {
 	height: 40px;
@@ -44,6 +57,28 @@ h2 {
 .light {
 	background-color: #ccc;
 	color: #333;
+}
+
+.btnTop {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 40px 60px 40px auto;
+}
+
+.btnTop p {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+/* ask aaron how to use css3 to make circle hover! */
+.btnTopBg {
+	background-color: #666;
+	/*let svg define height and width*/
+	height: 75px;
+	width: 75px;
+	border-radius: 75px;
+	margin-bottom: 15px;
 }
 
 
@@ -124,13 +159,18 @@ h2 {
 }
 
 #welcomeDesc {
+	text-align: center;
+	vertical-align: middle;
+	/*has to be same size as box height to center properly vertically*/
+	line-height: 80px;
 	width: 840px;
 	/*let content dictate height*/
-	height: 83px;
+	height: 80px;
 	background-color: #ccc;
 	margin: 40px 0px;
 	font-weight: bold;
 }
+
 
 /* === EVENTS === */
 
@@ -268,11 +308,132 @@ h2 {
 
 #impact p {
 	text-align: center;
+	margin-bottom: 40px;
 }
 
-.btnCon {
+/* === HOME - LATEST NEWS SECTION === */
+
+#latestNews {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+#latestNews h2 {
+	margin-bottom: 40px;
+}
+
+#latestNewsDesc {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#newsCon {
+	display: flex;
+	flex-direction: row;
+}
+
+#newsCon .newsConColumn:nth-child(2){
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.newsConColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+/*replace all newsImgs with images?*/
+.newsImg1 {
+	width: 230px;
+	height: 200px;
+	background-color: #999;
+}
+
+.newsImg2 {
+	width: 230px;
+	height: 250px;
+	background-color: #999;
+}
+
+.newsImg3 {
+	width: 230px;
+	height: 150px;
+	background-color: #999;
+}
+
+.newsDesc {
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+/*replace with actual icon*/
+.newsIcon {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	background-color: #666;
+}
+.newsDate {
+	font-size: 14px;
+}
+
+.newsTitle {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #666;
+}
+
+.newsSubtitle {
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* === HOME - SPONSORS SECTION === */
+
+#sponsors {
+	display: flex;
+	flex-direction: column;
+	width: 880px;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: #fff;
+}
+
+#sponsors h2 {
+	margin-bottom: 40px;
+}
+
+#sponsors p {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.sponRow {
+	display: flex;
+	flex-direction: row;
+	margin: 0px auto 40px auto;
+}
+
+/* replace class name with img element*/
+.sponRow .sponLogo:nth-child(2) {
+	margin-left: 40px;
+}
+
+.sponRow .sponLogo:nth-child(3) {
+	margin-left: 40px;
+}
+
+/*replace with logo images*/
+.sponLogo {
+	width: 210px;
+	height: 75px;
+	background-color: #666;
 }
 
 /* === MAIN FOOTER === */
