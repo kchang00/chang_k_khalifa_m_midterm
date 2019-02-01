@@ -61,6 +61,20 @@
 					</ul>
 				</div>
 				<div id="joinForm">
+					<p>required fields *</p>
+					<form id="membershipForm" action="contact-form.php" method="post">
+						<label>Name:*</label>
+						<input type="text" required id="nameContact" placeholder="e.g. John Smith" size="30">
+						<label>Email:*</label>
+						<input type="email" required id="email" placeholder="example@email.com" size="30">
+						<label>Confirm Email:*</label>
+						<input type="text" required id="subject" placeholder="example@email.com" size="30">
+						<label>Date of Birth:*</label>
+						<input type="text" required id="dateBirth" placeholder="yyyy-mm-dd" size="30">
+						<label>Phone:</label>
+						<input type="tel" id="phone" placeholder="555-555-5555" size="30" >
+						<input class= "btnLarge light" id="submitJoinButton" type="submit" value="NEXT">
+					</form>
 				</div>
 			</div>
 		</section>
