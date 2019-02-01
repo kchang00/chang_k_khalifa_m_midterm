@@ -48,3 +48,12 @@ Created index.html with header, pull request to merge with master.
 - fixed the submit button
 - added events widget
 - added home link to logo in contact and index page
+
+01/31/19 05:00 -> des.mk.join - Mariam
+- join page started
+- css changes
+
+02/1/19 09:15 -> des.mk.join - Mariam
+-finsihed join page
+- some issues still need to be fixed
+- ordered list won't display numbers!
