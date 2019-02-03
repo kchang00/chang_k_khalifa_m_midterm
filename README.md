@@ -57,3 +57,15 @@ Created index.html with header, pull request to merge with master.
 -finsihed join page
 - some issues still need to be fixed
 - ordered list won't display numbers!
+
+02/03/19 3:00pm -> des.kc.scaffold - Kayla
+Created about page
+Fixed spacing on homepage
+Tried adding map widget to contact page
+Issues to be fixed:
+	- Fix about page team title card height
+	- Replace team names with real names
+	- Fix history alignment
+	- Add hover overlays to mission statements?
+
+

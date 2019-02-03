@@ -267,14 +267,8 @@ h2 {
 #statements {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
 	margin-bottom: 40px;
-}
-
-#statements div:nth-child(3) {
-	border-right: 3px solid #666;
-	border-left: 3px solid #666;
-	margin-right: 40px;
-	margin-left: 40px;
 }
 
 .statement {
@@ -282,6 +276,13 @@ h2 {
 	flex-direction: column;
 	align-items: center;
 	max-width: 190px;
+}
+
+.statement:nth-child(3) {
+	border-right: 3px solid #666;
+	border-left: 3px solid #666;
+	padding-right: 40px;
+	padding-left: 40px;
 }
 
 /*replace with icon*/
@@ -560,7 +561,7 @@ h2 {
 } /* END MAIN FOOTER */
 
 
-/*Contact Page*/
+/* === CONTACT PAGE === */
 
 .hero {
 	width: 960px;
@@ -682,26 +683,23 @@ h2 {
 	height: 230px;
 	background-color: #999;
 	margin-top: 20px;
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	position: relative;
+	justify-content: flex-start;*/
+/*	position: relative;*/
+	border: 0;
 }
 
-#mapArea p {
+/*#mapArea p {
 	font-size: 12px;
 	color: #fff;
 	text-align: center;
-}
+}*/
 
-#map {
-	width: 333px;
-	height: 230px;
-}
 
-#mapArea p:last-child {
+/*#mapArea p:last-child {
 	padding-bottom: 20px;
-}
+}*/
 
 #mailAddIcon {
 	display: flex;
@@ -917,5 +915,165 @@ h2 {
 	width: 160px;
 	height: 60px;
 	margin-left: 270px;
+}
+
+/* === ABOUT PAGE === */
+
+#tagline {
+	margin: 40px auto;
+}
+
+/* Mission Statements */
+
+#mission {
+	display: flex;
+	flex-direction: column;
+	width: 840px;
+	margin: 0 auto;
+}
+
+#mission h2 {
+	margin-bottom: 40px;
+}
+
+.statementsRow {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+}
+
+.statementsRow div:nth-child(2) {
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.missionStatement {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px;
+	max-width: 190px;
+	background-color: #fff;
+}
+
+.missionStatement p {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* History */
+
+#history {
+	padding: 40px;
+	background-color: #ccc;
+}
+
+#historyCon {
+	display: flex;
+	flex-direction: row;
+	margin-top: 40px;
+	justify-content: space-around;
+	padding: 0px 80px;
+}
+
+#timeline {
+	height: 520px;
+	width: 3px;
+	background-color: #666;
+	margin: 0px 40px;
+}
+
+.historyColumn1 {
+	display: flex;
+	flex-direction: column;
+}
+
+.historyColumn2 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+
+.yearCircle {
+	height: 80px;
+	width: 80px;
+	border-radius: 80px;
+	line-height: 80px;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ececec;
+	position: relative;
+	margin: 40px 0px;
+}
+
+.descBox {
+	height: 80px;
+	width: 280px;
+	text-align: center;
+	display: inline-block;
+	background-color: #ececec;
+	position: relative;
+/*	margin-bottom: 40px;*/
+}
+
+/* Team */
+
+#team {
+	padding: 40px;
+}
+
+#executives {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+#volunteers {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+.teamRow {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.member {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+}
+
+.member:nth-child(2) {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.memberTitle {
+	height: 200px;
+	width: 230px;
+	background-color: #fff;
+}
+
+.memberTitle h3{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 200px;
+}
+
+.memberImg {
+	/*replace with images*/
+	height: 150px;
+	width: 230px;
+	background-color: #666;
+}
+
+.memberName {
+	padding: 20px;
+	text-align: center;
 }
 
