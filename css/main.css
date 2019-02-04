@@ -40,6 +40,7 @@ h2 {
 	font-size: 18px;
 	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
 	margin: 5px;
+	text-transform: uppercase;
 }
 
 .btnLarge {
@@ -47,6 +48,7 @@ h2 {
 	width: 150px;
 	font-size: 24px;
 	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
+	text-transform: uppercase;
 }
 
 .dark {
@@ -1092,3 +1094,77 @@ h2 {
 	text-align: center;
 }
 
+/* === PROJECTS PAGE === */
+
+#donateBanner {
+	display: flex;
+	justify-content: flex-start;
+	background-color: #ccc;
+	padding: 40px;
+}
+
+#donateBanner p {
+	font-size: 24px;
+/*	text-transform: uppercase;*/
+	color: #fff;
+	margin-right: auto;
+	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.btnDonate {
+	margin-right: 40px;
+}
+
+#projectArea {
+	display: flex;
+	flex-direction: column;
+}
+
+.projectRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.project {
+	height: 400px;
+	width: 480px;
+	background-color: #666;
+	text-align: center;
+	padding: 0 auto;
+}
+
+.project:hover {
+	opacity: 0.5;
+  	transition: .7s ease;
+  	background-color: #ccc;
+}
+
+.project h3 {
+	font-size: 24px;
+	color: #fff;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.comingSoon {
+	background-color: #999;
+}
+
+#projectArchive {
+	width: 960px;
+	height: 200px;
+	background-color: #999;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+}
+
+#projectArchive h2 {
+	font-size: 48px;
+	color: #fff;
+	margin: auto 0px;
+}
