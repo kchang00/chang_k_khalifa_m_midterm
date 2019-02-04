@@ -70,4 +70,9 @@ Created index.html with header, pull request to merge with master.
 	- Fix history alignment
 	- Add hover overlays to mission statements?
 
+02/04/19 -> des.kc.scaffold - Kayla
+
+- projects page created
+- create overlays + fix spacing
+
 
