@@ -75,4 +75,9 @@ Created index.html with header, pull request to merge with master.
 - projects page created
 - create overlays + fix spacing
 
+02/04/19 -> des.mk.join - Mariam
+- fixed css issues
+- added images
+- finished rest of page
+
 
