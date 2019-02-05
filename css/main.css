@@ -934,6 +934,44 @@ h2 {
 	margin-top: 25px;
 }
 
+#paperForm {
+	margin-top: 80px;
+	background-color: #ccc;
+	display: flex;
+	justify-content: flex-start;
+	height: 160px;
+}
+
+#paperFormText {
+	width: 590px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 60px;
+	border-right: #666 1px solid;
+	margin-top: 20px;
+}
+
+#paperForm p:first-child{
+	font-size: 22px;
+	color: #666;
+}
+
+#paperForm p:last-child {
+	font-size: 18px;
+	color: #666;
+	margin-top: 20px;
+}
+
+#paperFormButton button{
+	width: 242px;
+	height: 70px;
+	font-size: 20px;
+	color: #fff;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
 /* === ABOUT PAGE === */
 
 #tagline {
