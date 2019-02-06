@@ -1301,3 +1301,147 @@ nav {
 	color: #fff;
 	margin: auto 0px;
 }
+
+/* ==== Blog Page ====*/
+
+#mainBlog {
+	display: flex;
+	justify-content: space-between;
+}
+
+#blogPosts {
+	width: 550px;
+	display: flex;
+	flex-direction: column;
+	margin-left: 40px;
+}
+
+#post1 {
+	margin-top: 40px;
+	background-image: url(../images/blogPost-bg.svg);
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+}
+
+#post1 h3 {
+	margin-top: 80px;
+	font-size: 24px;
+	color: #999;
+	text-align: center;
+
+}
+
+.postText p {
+	font-size: 14px;
+	color: #999;
+	padding: 20px 50px 10px 40px;
+	line-height: 15px;
+	margin-top: 10px;
+}
+
+.postText a {
+	color: #999;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+.postTags ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.postTags ul li {
+	list-style-type: square;
+	color: #999;
+	font-size: 12px;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+#post2 {
+	margin-top: 40px;
+	background-image: url(../images/blogPost-bg.svg);
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+}
+
+#post2 h3 {
+	margin-top: 80px;
+	font-size: 24px;
+	color: #999;
+	text-align: center;
+}
+
+.postImageAndText {
+	display: flex;
+	height: 115px;
+	margin-top: 20px;
+}
+
+.postImage {
+	width: 170px;
+	height: 115px;
+	background-color: #666;
+	margin-left: 20px;
+}
+
+#post2 p {
+	font-size: 14px;
+	color: #999;
+	line-height: 15px;
+	margin-top: 10px;
+}
+
+#post2 a {
+	color: #999;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+#post2-tags ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#post2-tags ul li {
+	list-style-type: square;
+	color: #999;
+	font-size: 12px;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+#post3 {
+	margin-top: 40px;
+	background-image: url(../images/blogPost-bg.svg);
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+}
+
+#post3 h3 {
+	margin-top: 80px;
+	font-size: 24px;
+	color: #999;
+	text-align: center;
+}
+
+
+#blogLinks {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
