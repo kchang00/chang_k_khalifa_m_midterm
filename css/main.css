@@ -6,6 +6,7 @@ h1 {
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
+	font-family: 'Slabo 27px', serif;
 }
 
 h2 {
@@ -13,6 +14,15 @@ h2 {
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
+	font-family: 'Slabo 27px', serif;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+}
+
+nav {
+	font-family: 'Slabo 27px', serif;
 }
 
 .hidden {
