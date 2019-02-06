@@ -1333,7 +1333,7 @@ nav {
 
 }
 
-.postText p {
+#post1 p {
 	font-size: 14px;
 	color: #999;
 	padding: 20px 50px 10px 40px;
@@ -1341,7 +1341,7 @@ nav {
 	margin-top: 10px;
 }
 
-.postText a {
+#post1 a {
 	color: #999;
 	font-size: 14px;
 	margin-top: 20px;
@@ -1349,12 +1349,12 @@ nav {
 	text-decoration: none;
 }
 
-.postTags ul {
+#post1-tags ul {
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.postTags ul li {
+#post1-tags ul li {
 	list-style-type: square;
 	color: #999;
 	font-size: 12px;
@@ -1380,14 +1380,15 @@ nav {
 
 .postImageAndText {
 	display: flex;
+	justify-content: flex-start;
 	height: 115px;
 	margin-top: 20px;
 }
 
-.postImage {
+#post2-img {
 	width: 170px;
 	height: 115px;
-	background-color: #666;
+	background: #666;
 	margin-left: 20px;
 }
 
@@ -1396,6 +1397,10 @@ nav {
 	color: #999;
 	line-height: 15px;
 	margin-top: 10px;
+	margin-left: 20px;
+	padding-right: 40px;
+	padding-left: 20px;
+	height: 80px;
 }
 
 #post2 a {
@@ -1416,8 +1421,9 @@ nav {
 	color: #999;
 	font-size: 12px;
 	padding: 10px;
-	margin-top: 30px;
+	margin-top: 20px;
 }
+
 
 #post3 {
 	margin-top: 40px;
@@ -1435,12 +1441,98 @@ nav {
 	text-align: center;
 }
 
+#post3-img {
+	width: 170px;
+	height: 115px;
+	background: #666;
+	margin-left: 20px;
+}
+
+#post3 p {
+	font-size: 14px;
+	color: #999;
+	line-height: 15px;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding-right: 40px;
+	padding-left: 20px;
+	height: 80px;
+}
+
+#post3 a {
+	color: #999;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+#post3-tags ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#post3-tags ul li {
+	list-style-type: square;
+	color: #999;
+	font-size: 12px;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+#moreBlogPosts {
+	width: 200px;
+	height: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 40px;
+	margin-left: 150px;
+	font-size: 20px;
+	color: #fff;
+}
 
 #blogLinks {
 	width: 200px;
 	display: flex;
 	flex-direction: column;
 }
+
+#blogLinks h4 {
+	font-size: 18px;
+	color: #999;
+	margin-top: 60px;
+}
+
+#popularPosts {
+ display: flex;
+ flex-direction: column;
+}
+
+.postLink {
+	display: flex;
+	justify-content: space-between;
+}
+
+.postLinkImage {
+	width: 50px;
+	height: 20px;
+	background-color: #666;
+	display: inline;
+}
+
+#blogLinks a {
+	text-decoration: none;
+}
+
+#recentPosts {
+
+}
+
+#archives {
+
+}
+
+
 
 
 
