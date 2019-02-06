@@ -1488,11 +1488,11 @@ nav {
 	margin-top: 40px;
 	margin-left: 150px;
 	font-size: 20px;
-	color: #fff;
+	color: #666;
 }
 
 #blogLinks {
-	width: 200px;
+	width: 300px;
 	display: flex;
 	flex-direction: column;
 }
@@ -1500,36 +1500,48 @@ nav {
 #blogLinks h4 {
 	font-size: 18px;
 	color: #999;
-	margin-top: 60px;
+	margin-top: 70px;
 }
 
 #popularPosts {
  display: flex;
  flex-direction: column;
+ width: 300px;
 }
 
 .postLink {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	margin-top: 20px;
+	width: 300px;
 }
 
 .postLinkImage {
-	width: 50px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 	background-color: #666;
-	display: inline;
 }
 
 #blogLinks a {
 	text-decoration: none;
-}
-
-#recentPosts {
-
+	color: #999;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 14px;
 }
 
 #archives {
+	display: flex;
+	flex-direction: column;
+}
 
+#archives a {
+	text-decoration: underline;
+	margin-left: 0;
+}
+
+#archives h4 {
+	margin-bottom: 20px;
 }
 
 
