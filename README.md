@@ -1,10 +1,12 @@
+<center><img src="images/logo.svg" width="20%">
+
 # TRAA Site
 
-<img src="images/logo.svg" width="20%">
-
-> Remaking the Thames River Anglers Association site. Old version can be found [here](anglers.org)
-
 <hr>
+Remaking the Thames River Anglers Association site. Old version can be found [here](anglers.org)
+<hr>
+
+</center>
 
 ## Team Members:
 
