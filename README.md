@@ -1,6 +1,6 @@
 # TRAA Site
 
-![TRAA Logo](images/logo.svg =50%x)
+<img src="images/logo.svg" width="20%">
 
 > Remaking the Thames River Anglers Association site. Old version can be found [here](anglers.org)
 
