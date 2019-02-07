@@ -22,7 +22,7 @@
 ```
 ## Design Elements :fish:
 
-[ ] Replace place holder images
-[ ] Tweak custom icons
-[ ] Implement more design and CSS3 :+1:
+- [ ] Replace place holder images
+- [ ] Tweak custom icons
+- [ ] Implement more design and CSS3 :+1:
 
