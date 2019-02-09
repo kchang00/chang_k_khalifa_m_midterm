@@ -605,7 +605,6 @@ input {
 .hero {
 	width: 960px;
 	height: 408px;
-	background-color: #999;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -613,7 +612,10 @@ input {
 }
 
 .heroImage {
-	background: url(../images/about_hero.jpg) no-repeat;
+	height: 408px;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 
@@ -621,15 +623,19 @@ input {
 	font-size: 48px;
 	color: #fff;
 	text-align: center;
-	margin-bottom: 120px;
+	position: absolute;
+	top: 180px;
+	left: 350px;
 }
 
 .downArrow {
 	width: 50px;
 	height: 50px;
-	background-image : url(../images/down_arrow.svg);
+	background-image : url(../images/arrow_down.svg);
 	background-repeat: no-repeat;
-	margin-left: 460px;
+	position: absolute;
+	left: 460px;
+	top: 350px;
 }
 
 #mainContact {
