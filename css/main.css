@@ -17,12 +17,32 @@ h2 {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
+h3 {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: 'Open Sans Condensed', sans-serif; 
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: 'Open Sans Condensed', sans-serif; 
+}
+
 p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 }
 
 nav {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+input {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -35,7 +55,6 @@ nav {
 	flex-direction: column;
 	width: 960px;
 	margin: 0 auto;
-	background-color: #ececec;
 }
 
 /*  === BUTTONS === */
@@ -53,6 +72,7 @@ nav {
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 3px;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .btnLarge {
@@ -62,6 +82,8 @@ nav {
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 3px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
 }
 
 .btnLarge:hover, .btnSmall:hover{
@@ -96,18 +118,22 @@ nav {
 }
 
 .btnTop p {
-	font-size: 14px;
+	font-size: 12px;
 	text-transform: uppercase;
+	color: #999;
+	font-weight: bold;
+	margin-left: 10px;
 }
 
 /* ask aaron how to use css3 to make circle hover! */
 .btnTopBg {
-	background-color: #666;
+	background: url(../images/back_to_top.svg) no-repeat;
 	/*let svg define height and width*/
-	height: 75px;
+	height: 60px;
 	width: 75px;
-	border-radius: 75px;
-	margin-bottom: 15px;
+	margin-left: 30px;
+	/*border-radius: 75px;*/
+	margin-bottom: 5px;
 }
 
 /*Swing Button*/
@@ -179,12 +205,14 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	height: 128px;
 }
 
 #headerLogo {
-	width: 121px;
-	height: 60px;
-	background-color: #666;
+	width: 122px;
+	height: 109px;
+	margin-left: 20px;
+	margin-top: 5px;
 }
 
 
@@ -198,9 +226,14 @@ nav {
 #headerSocialMedia ul li {
 	width: 25px;
 	height: 25px;
-	background-color: #666;
 	margin-left: 20px;
 	margin-top: 20px;
+	background-color: #666;
+}
+
+#headerSocialMedia.hSocialIcon {
+	width: 22px;
+	height: 22px;
 }
 
 /* Main Navigation */
@@ -232,15 +265,35 @@ nav {
 	transition: all .5s ease;
 }
 
-/* Hero */
+/* Carousel */
 
-#hero {
-  	background-color: #999;
-/*	position: absolute;*/
-  	width: 960px;
-  	height: 408px;
-  	margin-bottom: 40px;
+#carousel {
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-end;
+  	background: url(../images/home_hero.jpg) no-repeat;
 }
+
+#carousel-arrows {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 180px;
+}
+
+#activityDesc {
+	height: 100px;
+}
+
+#activityDesc h4 {
+	margin-top: 70px;
+	color: #fff;
+}
+
+#activityDesc img {
+	margin-left: 415px;
+	margin-top: 60px;
+}
+
 
 /* === HOME- WELCOME SECTION=== */
 
@@ -248,6 +301,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 120px;
 }
 
 #welcomeDesc {
@@ -327,6 +381,7 @@ nav {
 
 #eventsWidget button{
 	margin: 0 auto;
+	font-size: 16px;
 }
 
 /* === HOME - ABOUT SECTION === */
@@ -338,11 +393,9 @@ nav {
 	margin: 0 auto;
 }
 
-/*replace with image*/
 #aboutImg {
 	width: 840px;
 	height: 250px;
-	background-color: #999;
 }
 
 #aboutCon {
@@ -484,11 +537,13 @@ nav {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #666;
+	margin-top: 5px;
 }
 
 .newsSubtitle {
 	font-size: 14px;
 	font-style: italic;
+	margin-top: 5px;
 }
 
 /* === HOME - SPONSORS SECTION === */
@@ -496,7 +551,6 @@ nav {
 #sponsors {
 	display: flex;
 	flex-direction: column;
-	width: 880px;
 	margin: 0 auto;
 	padding: 40px;
 	background-color: #fff;
@@ -518,20 +572,31 @@ nav {
 	margin: 0px auto 40px auto;
 }
 
-/* replace class name with img element*/
-.sponRow .sponLogo:nth-child(2) {
-	margin-left: 40px;
+.sponRow img:first-child {
+	width: 187px;
+	height: 57px;
 }
 
-.sponRow .sponLogo:nth-child(3) {
+.sponRow img:nth-child(2) {
 	margin-left: 40px;
+	width: 194px ;
+	height: 44px;
 }
 
-/*replace with logo images*/
-.sponLogo {
-	width: 210px;
-	height: 75px;
-	background-color: #666;
+.sponRow img:nth-child(3) {
+	margin-left: 40px;
+	width: 202px;
+	height: 40px;
+}
+
+.sponRow img:nth-child(4) {
+	width: 195px;
+	height: 73px;
+}
+
+.sponRow img:last-child {
+	height: 106px;
+	width: 95px;
 }
 
 
@@ -545,6 +610,10 @@ nav {
 	flex-direction: column;
 	justify-content: flex-end;
 	position: relative;
+}
+
+.heroImage {
+	background: url(../images/about_hero.jpg) no-repeat;
 }
 
 
@@ -1431,9 +1500,6 @@ nav {
 /* === MAIN FOOTER === */
 
 #mainFooter {
-	display: flex;
-	flex-direction: column;
-	width: 840px;
 	background-color: #333;
 	padding: 40px 60px;
 }
@@ -1442,6 +1508,7 @@ nav {
 	font-size: 24px;
 	margin-bottom: 15px;
 	color: #fff;
+	text-align: left;
 }
 
 #mainFooter p {
@@ -1466,6 +1533,10 @@ nav {
 .text {
 	height: 40px;
 	width: 260px;
+}
+
+#name {
+	padding-left: 5px;
 }
 
 .subBut {
@@ -1519,11 +1590,20 @@ nav {
 
 /* Footer Logo */
 
+#mainFooterJoin {
+	display: flex;
+	flex-direction: column;
+}
+
 #mainFooterLogo {
-	/* let logo define height*/
-	height: 150px;
+	width: 133px;
+	background-color: #fff;
+	padding: 8px;
+}
+
+#joinNowButton {
+	padding: 8px;
 	width: 150px;
-	background-color: #666;
 }
 
 /* Bottom Footer */

@@ -13,13 +13,13 @@
 		<h1 class="hidden">TRAA Home</h1>
 
 		<header id="mainHeader">
-			<a href="index.html" id="headerLogo"><img src="images/logo.svg" alt="logo" width="" height=""></a>
+			<a href="index.html" id="headerLogo"><img src="images/logo.svg" alt="logo" width="122" height="109"></a>
 			<div id="headerSocialMedia">
 				<ul>
-					<li class="facebook"><a href="#"><!-- <img src="images/facebook.svg" alt="Facebook"> --></a></li>
-					<li class="youtube"><a href="#"><!-- <img src="images/youtube.svg" alt="YouTube"> --></a></li>
-					<li class="linkedin"><a href="#"><!-- <img src="images/linkedin.svg" alt="LinkedIn"> --></a></li>
-					<li class="twitter"><a href="#"><!-- <img src="images/twitter.svg" alt="Twitter"> --></a></li>
+					<li class="hSocialIcon"><a href="#"><img src="images/facebook.svg" alt="Facebook"></a></li>
+					<li class="hSocialIcon"><a href="#"><img src="images/twitter.svg" alt="Twitter"></a></li>
+					<li class="hSocialIcon"><a href="#"><img src="images/youtube.svg" alt="Youtube"></a></li>
+					<li class="hSocialIcon"><a href="#"><img src="images/linkedIn.svg" alt="LinkedIn"></a></li>
 				</ul>
 			</div>
 			<nav id="mainNav">
@@ -33,7 +33,15 @@
 			</nav>
 		</header>
 
-		<div id="hero"></div>
+		<div id="carousel">
+			<div id="carousel-arrows">
+				<img src="images/arrow_left.svg" height="47" width="30">
+				<img src="images/arrow_right.svg" height="47" width="30">
+			</div>
+			<div id="activityDesc">
+				<h4>Activity Description</h4>
+				<img id="carouselPicker" src="images/carousel_picker.svg" alt="Carousel Picker" width="133" height="13">
+			</div>
 
 		<section id="welcome">
 		<h1>WELCOME TO THE TRAA</h1>
@@ -104,7 +112,7 @@
 		</section> <!-- end events widget -->
 
 		<section id="about">
-			<div id="aboutImg"></div>
+			<img id="aboutImg" src="images/home_about.jpg" alt="River Image">
 			<div id="aboutCon">
 				<h2>ABOUT THE TRAA</h2>
 				<p id="aboutDesc">
@@ -270,13 +278,13 @@
 				The support of the following local area businesses is much appreciated:
 			</p>
 			<div class="sponRow">
-				<div class="sponLogo"></div>
-				<div class="sponLogo"></div>
-				<div class="sponLogo"></div>
+				<img src="images/home_sponsor_melchers.jpg" alt="Melchers Logo">
+				<img src="images/home_sponsor_muma.jpg" alt="Muma Logo">
+				<img src="images/home_sponsor_guillevin.jpg" alt="Guillevin Logo">
 			</div>
 			<div class="sponRow">
-				<div class="sponLogo"></div>
-				<div class="sponLogo"></div>
+				<img src="images/home_sponsor_tryRecycling.jpg" alt="Try Recycling Logo">
+				<img src="images/home_sponsor_angling.jpg" alt="Angling Logo">
 			</div>			
 		</section> <!-- end sponsors section -->
 
@@ -330,9 +338,8 @@
 
 				<section id="mainFooterJoin">
 				<h3 class="hidden">Join Us Button</h3>
-				<!-- replace with logo -->
-					<div id="mainFooterLogo"></div>
-						<button class="btnLarge light">JOIN NOW</button>
+					<img id="mainFooterLogo" src="images/logo.svg" alt="Logo">
+					<button id="joinNowButton" class="btnLarge light">JOIN NOW</button>
 				</section>
 			</div>
 			<nav id="mainFooterBottom">
