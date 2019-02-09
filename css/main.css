@@ -113,8 +113,10 @@ input {
 .btnTop {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	margin: 40px 60px 40px auto;
+/*	background-color: gold;*/
 }
 
 .btnTop p {
@@ -122,18 +124,26 @@ input {
 	text-transform: uppercase;
 	color: #999;
 	font-weight: bold;
-	margin-left: 10px;
+	text-align: center;
 }
 
 /* ask aaron how to use css3 to make circle hover! */
 .btnTopBg {
-	background: url(../images/back_to_top.svg) no-repeat;
-	/*let svg define height and width*/
+	
+	/*let svg define height and width
 	height: 60px;
-	width: 75px;
-	margin-left: 30px;
-	/*border-radius: 75px;*/
-	margin-bottom: 5px;
+	width: 75px;*/
+	padding: 21px 11px;
+	border-radius: 75px;
+	margin-bottom: 10px;
+/*	background-color: tomato;*/
+}
+
+.btnTopBg:hover {
+	transition: .3s ease;
+	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
+	cursor: pointer;
+	border-radius: 75px;
 }
 
 /*Swing Button*/
@@ -445,11 +455,23 @@ input {
 	padding-left: 40px;
 }
 
-/*replace with icon*/
-.statementIcon {
+/*replaced with icon*/
+/*.statementIcon {
 	width: 110px;
 	height: 110px;
 	background-color: #666;
+}*/
+
+#homeAboutIconProtect {
+	width: 88px;
+}
+
+#homeAboutIconPromote {
+	width: 95px;
+}
+
+#homeAboutIconParticipate {
+	width: 68px;
 }
 
 .statementTitle {
@@ -507,23 +529,33 @@ input {
 	flex-direction: column;
 }
 
-/*replace all newsImgs with images?*/
-.newsImg1 {
-	width: 230px;
-	height: 200px;
+/*replaced all newsImgs with images*/
+/*.newsImg1 {
+	width: 227px;
+	height: 185px;
 	background-color: #999;
 }
 
 .newsImg2 {
-	width: 230px;
-	height: 250px;
+	width: 227px;
+	height: 251px;
 	background-color: #999;
 }
 
 .newsImg3 {
-	width: 230px;
-	height: 150px;
+	width: 227px;
+	height: 166px;
 	background-color: #999;
+}
+
+.newsImg4 {
+	width: 227px;
+	height: 217px;
+	background-color: #999;
+}*/
+
+.newsImg {
+	width: 227px;
 }
 
 .newsDesc {
@@ -534,12 +566,11 @@ input {
 	margin-bottom: 20px;
 }
 
-/*replace with actual icon*/
 .newsIcon {
 	display: inline-block;
-	height: 10px;
-	width: 10px;
-	background-color: #666;
+	height: 15px;
+	width: 15px;
+	background-image: url(../images/blog_date.svg);
 }
 .newsDate {
 	font-size: 14px;
@@ -583,35 +614,21 @@ input {
 	display: flex;
 	flex-direction: row;
 	margin: 0px auto 40px auto;
-}
-
-.sponRow img:first-child {
-	width: 187px;
-	height: 57px;
+	align-items: center;
+/*	background-color: tomato;*/
 }
 
 .sponRow img:nth-child(2) {
 	margin-left: 40px;
-	width: 194px ;
-	height: 44px;
 }
 
 .sponRow img:nth-child(3) {
 	margin-left: 40px;
-	width: 202px;
-	height: 40px;
 }
 
-.sponRow img:nth-child(4) {
-	width: 195px;
-	height: 73px;
+.tryRecycling {
+	max-height: 73px;
 }
-
-.sponRow img:last-child {
-	height: 106px;
-	width: 95px;
-}
-
 
 /* === CONTACT PAGE === */
 
@@ -728,12 +745,12 @@ input {
 	justify-content: flex-start;
 }
 
-#square1 {
-	width: 15px;
-	height: 15px;
-	background-color: #666;
+#contactLocationIcon {
+	width: 17px;
+	height: 25px;
 	margin-top: 20px;
 	margin-left: 20px;
+	/*	background-color: #666;*/
 }
 
 #genMeetingHeading {
@@ -779,12 +796,12 @@ input {
 	justify-content: flex-start;
 }
 
-#square2 {
-	width: 15px;
-	height: 15px;
-	background-color: #666;
+#contactMailIcon {
+	width: 29px;
+	height: 23px;
 	margin-top: 20px;
 	margin-left: 20px;
+	/*	background-color: #666;*/
 }
 
 #mailAddHeading {
@@ -1083,6 +1100,31 @@ input {
 	background-color: #fff;
 }
 
+#missionStatementIcon1 {
+	width: 88px;
+}
+
+#missionStatementIcon2 {
+	width: 85px;
+}
+
+#missionStatementIcon3 {
+	width: 116px;
+}
+
+#missionStatementIcon4 {
+	width: 68px;
+}
+
+#missionStatementIcon5 {
+	width: 95px;
+}
+
+#missionStatementIcon6 {
+	width: 134px;
+	margin-bottom: 30px;
+}
+
 .missionStatement p {
 	margin-top: 20px;
 	text-align: center;
@@ -1235,21 +1277,21 @@ input {
 #projectArea {
 	display: flex;
 	flex-direction: column;
-	height: 800px;
 }
 
 .projectRow {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	align-items: center;
 }
 
-.project a {
+.project {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	height: 400px;
+	justify-content: center;
+	align-items: center;
 	width: 480px;
+	height: 400px;
 }
 
 .project:hover {
@@ -1258,61 +1300,29 @@ input {
   	background-color: #ccc;
 }
 
-.project img {
-	width: 480px;
-	height: 400px;
-}
-
 .project h3 {
 	color: #fff;
-	max-width: 300px;
 	text-align: center;
 }
 
-#hatchery-h3 {
-	position: relative;
-	bottom: 200px;
-	left: 80px;
+#projectHatchery {
+	background-image: url(../images/projects_hatchery.jpg);
 }
 
-#salmonid-h3 {
-	position: relative;
-	bottom: 200px;
-	left: 90px;
+#projectSalmonid {
+	background-image: url(../images/projects_salmonid_monitoring.jpg);
 }
 
-
-#komoka-h3 {
-	position: relative;
-	bottom: 200px;
-	left: 90px;
+#projectKomoka {
+	background-image: url(../images/projects_komoka_creek.jpg);
 }
 
-.comingSoon {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	position: relative;
+#projectBrownTrout {
+	background-image: url(../images/projects_brown_trout_hatchery.jpg);
 }
 
-
-.comingSoon h3 {
-	position: relative;
-	bottom: 220px;
-	color: #fff;
-}
-
-.comingSoon button {
-	position: relative;
-	bottom: 200px;
-	left: 150px;
-}
-
-.comingSoon:hover {
-	opacity: 0.5;
-  	transition: .7s ease;
-  	background-color: #ccc;
-  	height: 400px;
+#projectBrownTrout button{
+	margin-top: 20px;
 }
 
 #projectArchive {
@@ -1354,6 +1364,48 @@ input {
 	margin-left: 40px;
 }
 
+/* tags */
+
+.postTags ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.postTags ul li {
+/*	list-style-type: square;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #999;
+	font-size: 12px;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+.blogDateIcon {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	background-image: url(../images/blog_date.svg);
+}
+
+.blogCategoriesIcon {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	background-image: url(../images/blog_category.svg);
+}
+
+.blogCommentsIcon {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	background-image: url(../images/blog_comments.svg);
+}
+
 #post1 {
 	margin-top: 40px;
 	background-image: url(../images/blogPost-bg.svg);
@@ -1385,19 +1437,6 @@ input {
 	margin-top: 20px;
 	margin-left: 40px;
 	text-decoration: none;
-}
-
-#post1-tags ul {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-#post1-tags ul li {
-	list-style-type: square;
-	color: #999;
-	font-size: 12px;
-	padding: 10px;
-	margin-top: 30px;
 }
 
 #post2 {
@@ -1449,20 +1488,6 @@ input {
 	text-decoration: none;
 }
 
-#post2-tags ul {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-#post2-tags ul li {
-	list-style-type: square;
-	color: #999;
-	font-size: 12px;
-	padding: 10px;
-	margin-top: 20px;
-}
-
-
 #post3 {
 	margin-top: 40px;
 	background-image: url(../images/blogPost-bg.svg);
@@ -1503,19 +1528,6 @@ input {
 	margin-top: 20px;
 	margin-left: 40px;
 	text-decoration: none;
-}
-
-#post3-tags ul {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-#post3-tags ul li {
-	list-style-type: square;
-	color: #999;
-	font-size: 12px;
-	padding: 10px;
-	margin-top: 20px;
 }
 
 #moreBlogPosts {
