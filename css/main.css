@@ -34,10 +34,6 @@ p {
 	font-size: 14px;
 }
 
-nav {
-	font-family: 'Open Sans Condensed', sans-serif;
-}
-
 input {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -50,7 +46,10 @@ input {
 	display: flex;
 	flex-direction: column;
 	width: 960px;
-	margin: 0 auto;
+	/*set top margin to avoid content overlay*/
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*  === BUTTONS === */
@@ -123,7 +122,6 @@ input {
 	text-align: center;
 }
 
-/* ask aaron how to use css3 to make circle hover! */
 .btnTopBg {
 	
 	/*let svg define height and width
@@ -208,17 +206,26 @@ input {
 /* === HEADER === */
 
 #mainHeader {
+	position: fixed;
+	top: 0px;
+	/*puts header above hero*/
+	z-index: 2;
+	transition: top 0.3s;
+}
+
+#mainHeaderCon {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-	height: 128px;
+	justify-content: center;
+	align-items: center;
+	width: 920px;
+	padding: 20px;
+	background-color: #fff;
 }
 
 #headerLogo {
 	width: 122px;
-	height: 109px;
-	margin-left: 20px;
-	margin-top: 5px;
+	margin-right: 20px;
 }
 
 
@@ -226,49 +233,122 @@ input {
 
 #headerSocialMedia ul {
 	display: flex;
-	justify-content: flex-start;
+	flex-direction: row;
+/*	background-color: tomato;*/
 }
 
-#headerSocialMedia ul li {
-	width: 25px;
-	height: 25px;
+#headerSocialMedia ul li{
+	width: 24px;
+	height: 24px;
 	margin-left: 20px;
-	margin-top: 20px;
-	background-color: #666;
 }
 
-#headerSocialMedia.hSocialIcon {
+/*.hSocialIcon {
 	width: 22px;
 	height: 22px;
 }
-
+*/
 /* Main Navigation */
 
 #mainNav {
 	display: flex;
 	margin-left: auto;
+	margin-right: 20px;
 }
 
 #mainNav ul {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
+/*	background-color: gold;*/
 }
 
-#mainNav li {
+#mainNav ul li {
 	display: inline;
 }
 
-#mainNav ul li a {
-	font-size: 20px;
-	color: #666;
+#mainNav a {
 	text-decoration: none;
-	padding: 20px;
+	font-size: 24px;
+	font-family: Abolition, sans-serif;
+	color: #136a81;
+	padding: 20px 30px;
+	border-radius: 40px;
+/*	background-color: skyblue;*/
 }
 
-#mainNav ul li a:hover {
-	background-color: #ccc;
+#mainNav a:hover {
 	transition: all .5s ease;
+	background-color: #94a401;
+	color: #fff;
+	padding: 20px 30px;
+	border-radius: 40px;
+}
+
+#navJoin {
+	color: #fff !important;
+	background-color: #94a401 !important;
+	margin-left: 20px;
+}
+
+#navJoin:hover {
+	color: #fff !important;
+	background-color: #136a81 !important;
+}
+
+/* sub nav beginning*/
+
+#dropdown {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	transition: top 0.3s;
+/*	background-color: tomato;*/
+}
+
+.subNav {
+	margin-top: 20px;
+}
+
+.subNav ul li a{
+	color: #fff;
+	background-color: #94a401;
+	padding: 20px 40px;
+}
+
+#whoNav {
+	display: none;
+}
+
+#whoNav ul{
+	margin-left: 420px;
+}
+
+#whoNav.slideToggle {
+/*	transition: all .3s ease;*/
+	display: block;
+}
+
+#workNav {
+	display: none;
+}
+
+#workNav ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 530px;
+	background-color: #94a401;
+}
+
+#workNav ul li {
+	margin-bottom: 20px;
+}
+
+#workNav.slideToggle {
+/*	transition: all .3s ease;*/
+	display: block;
 }
 
 /* Carousel */
@@ -1643,16 +1723,14 @@ input {
 #mainFooterSocialNav ul {
 	display: flex;
 	flex-direction: row;
+	margin-top: 30px;
 /*	background-color: tomato;*/
 }
 
-.socialIcon {
+#mainFooterSocialNav ul li{
 	/* let icon define height*/
-	height: 40px;
 	width: 40px;
 	margin-right: 20px;
-	margin-top: 30px;
-	background-color: #666;
 }
 
 /* Contact Blurb */
