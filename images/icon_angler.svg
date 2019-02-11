@@ -2,7 +2,7 @@
 	<defs>
 		<style>
 			.cls-1,.cls-4,.cls-5,.cls-6,.cls-7{fill:none;}
-			.cls-1,.cls-6,.cls-7{stroke:#000;}
+			.cls-1,.cls-6,.cls-7{stroke:#136a81;}
 			.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{stroke-miterlimit:10;}
 			.cls-1,.cls-2,.cls-6{stroke-width:1.3px;}
 			.cls-2,.cls-3,.cls-4,.cls-5{stroke:#fff;}
@@ -10,9 +10,10 @@
 			.cls-5{stroke-width:0.37px;}
 			.cls-6{stroke-linecap:round;}
 			.cls-7{stroke-width:3.43px;}
+			.cls-8,.cls-2,.cls-3 {fill:#136a81;}
 
 
-			#angler:hover { fill:#46C9B3; transition: 0.3s ease; cursor: pointer;}
+			#angler:hover {fill:#46C9B3; transition: 0.3s ease; cursor: pointer;}
 			#angler:hover .cls-1, #angler:hover .cls-7, #angler:hover .cls-6 {stroke: #46C9B3; transition: 0.3s ease; cursor: pointer;}
 			
 			#angler_small_pocket_left, #angler_small_pocket_right, #angler_large_pocket_right, #angler_large_pocket_left, #vest_zipper, #angler_small_pocket_left_top, #angler_small_pocket_right_top, #angler_large_pocket_right_top1, #angler_large_pocket_right_top2, #angler_large_pocket_left_top1, #angler_large_pocket_left_top2 { display: none; }
@@ -29,45 +30,25 @@
 	</defs>
 
 	<defs>
-		<script>
-			let icon_angler = document.querySelector("#angler");
-
-<!-- 			let allIcons = document.querySelectorAll(".icon");
-
-			let allIcons.classList = 'icon'; -->
-
-			function logId() {
-				console.log(this.id);
-			}
-
-			icon_angler.addEventListener("click", logId);
-<!-- 
-			allIcons.classList.add(".icon");
-
-			allIcons.classList(list => {
-			list.addEventListener("click", logId);
-			}); -->
-
-		</script>
 	</defs>
 
 	<title>icon</title>
 	<g id="angler">
 		<g id="angler_person">
-			<circle id="angler_person_head" cx="42.41" cy="22.03" r="9.48"/>
-			<rect id="angler_person_leg_left" x="30.16" y="63.75" width="9.48" height="43" rx="4.47"/>
-			<rect id="angler_person_arm_left" x="18.3" y="31.69" width="9.48" height="43" rx="4.47" transform="translate(33.62 -3.8) rotate(33.93)"/>
-			<rect id="angler_person_leg_right" x="45.18" y="63.16" width="9.48" height="43.59" rx="4.5"/>
-			<rect id="angler_person_arm_right" x="57.04" y="31.34" width="9.48" height="43.59" rx="4.5" transform="translate(142.69 62.74) rotate(146.07)"/>
-			<path id="angler_person_body" d="
+			<circle id="angler_person_head" class="cls-8" cx="42.41" cy="22.03" r="9.48"/>
+			<rect id="angler_person_leg_left" class="cls-8" x="30.16" y="63.75" width="9.48" height="43" rx="4.47"/>
+			<rect id="angler_person_arm_left" class="cls-8" x="18.3" y="31.69" width="9.48" height="43" rx="4.47" transform="translate(33.62 -3.8) rotate(33.93)"/>
+			<rect id="angler_person_leg_right" class="cls-8" x="45.18" y="63.16" width="9.48" height="43.59" rx="4.5"/>
+			<rect id="angler_person_arm_right" class="cls-8" x="57.04" y="31.34" width="9.48" height="43.59" rx="4.5" transform="translate(142.69 62.74) rotate(146.07)"/>
+			<path id="angler_person_body" class="cls-8" d="
 				M30.16,63.16v6.43a1.91,1.91,0,0,0,1.91,1.91h6.19A2,2,0,0,0,40,70.42a2.53,2.53,0,0,1,2.21-1.29h.42a2.54,2.54,0,0,1,2.21,1.29,2,2,0,0,0,1.72,1.08h6.19a1.91,1.91,0,0,0,1.92-1.91V63.16"/>
-			<path id="angler_person_box" d="
+			<path id="angler_person_box" class="cls-8" d="
 				M2.57,73H21.66a2.57,2.57,0,0,1,2.57,2.57V85.2a2.71,2.71,0,0,1-2.71,2.71H2.71A2.71,2.71,0,0,1,0,85.2V75.57A2.57,2.57,0,0,1,2.57,73Z"/>
 			<path id="angler_person_handle" class="cls-1" d="
 				M8.24,73.25V71.47A1.27,1.27,0,0,1,9.51,70.2h6.17A1.27,1.27,0,0,1,17,71.47v1.78"/>
 			<path id="angler_person_hat_bottom" class="cls-2" d="
 				M53.67,19.7H30.88a.8.8,0,0,1-.71-1.22l1.88-3H52.51l1.88,3A.8.8,0,0,1,53.67,19.7Z"/>
-			<path id="angler_person_hat_top" d="
+			<path id="angler_person_hat_top" class="cls-8" d="
 				M46,8.19H38.59a5.48,5.48,0,0,0-5.18,3.54l-1.36,3.74H52.51l-1.37-3.74A5.47,5.47,0,0,0,46,8.19Z"/>
 		</g>
 
@@ -102,15 +83,15 @@
 		</g>
 
 		<g id="angler_rod">
-			<rect id="angler_rod_main" x="67.86" y="0.65" width="2.08" height="105.07" rx="1.04"/>
-			<rect id="angler_rod_bait" x="87.99" y="73.25" width="2.33" height="3.49" rx="1.05"/>
+			<rect id="angler_rod_main" class="cls-8" x="67.86" y="0.65" width="2.08" height="105.07" rx="1.04"/>
+			<rect id="angler_rod_bait" class="cls-8" x="87.99" y="73.25" width="2.33" height="3.49" rx="1.05"/>
 			<path id="angler_rod_hook" class="cls-1" d="
 				M92.4,76.74s1.31.5.61,2.28c0,0-1,1.57-2.48.92a2.48,2.48,0,0,1-1.37-2.3V75m2.32,2.91,1-1.87"/>
 			<path id="angler_rod_line2" class="cls-1" d="
 				M68.91,8.19c7.92,7.61,0,13.84,0,13.84,7.33,6.51,0,14.92,0,14.92,6.48,5.61,0,16.24,0,16.24,6.27,7.84,0,20.06,0,20.06,6.27,6.68,0,10.33,0,10.33"/>
 			<path id="angler_rod_line" class="cls-6" d="M68.91.65c13.68,15.91,20.25,72.6,20.25,72.6"/>
 			<circle id="angler_rod_reel" class="cls-7" cx="73.23" cy="86.6" r="3.02"/>
-			<rect id="angler_rod_handle" x="67" y="93.59" width="3.82" height="12.14" rx="1.91"/>
+			<rect id="angler_rod_handle" class="cls-8" x="67" y="93.59" width="3.82" height="12.14" rx="1.91"/>
 		</g>
 	</g>
 
