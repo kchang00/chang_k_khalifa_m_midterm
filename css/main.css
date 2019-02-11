@@ -80,7 +80,7 @@ input {
 	cursor: pointer;
 	border-radius: 25px;
 	font-family: 'Abolition', sans-serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	color: #fff;
 }
 
@@ -129,11 +129,11 @@ input {
 	text-transform: uppercase;
 	cursor: pointer;
 	font-family: 'Abolition', sans-serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	background-color: #94a401;
 }
 
-#btnJoin a{
+#btnJoin a {
 	color: #fff;
 }
 
@@ -1257,7 +1257,7 @@ input {
 
 #history {
 	padding: 40px;
-	background-color: #ccc;
+	background-color: #136a81;
 }
 
 #historyCon {
@@ -1271,7 +1271,7 @@ input {
 #timeline {
 	height: 520px;
 	width: 3px;
-	background-color: #666;
+	background-color: #fff;
 	margin: 0px 40px;
 }
 
@@ -1348,18 +1348,18 @@ input {
 .memberTitle {
 	height: 240px;
 	width: 260px;
-	background-color: #fff;
+	background-color: #136a81;
 }
 
 .memberTitle h3{
 	text-align: center;
 	vertical-align: middle;
-	line-height: 200px;
+	line-height: 240px;
+	color: #fff;
 }
 
 .memberImg {
 	width: 260px;
-	background-color: #666;
 }
 
 .memberName {
@@ -1368,7 +1368,10 @@ input {
 	/*white card is 230px. Makes sure alignment doesn't shift (accounts for padding around names)*/
 	max-width: 240px;
 	box-shadow: 0px 3px 3.84px 0.16px rgba(31, 29, 30, 0.34);
+}
 
+.memberName h4 {
+	color: #136a81;
 }
 
 .memberName p {
@@ -1677,7 +1680,7 @@ input {
 /* === MAIN FOOTER === */
 
 #mainFooter {
-	background-color: #333;
+	background-color: #0e4d5e;
 	padding: 40px 60px;
 }
 
@@ -1707,6 +1710,10 @@ input {
 	max-width: 340px;
 }
 
+#Newsletter p {
+	line-height: 15px;
+}
+
 .text {
 	height: 40px;
 	width: 260px;
@@ -1733,8 +1740,12 @@ input {
 
 #mainFooterContact {
 	max-width: 150px;
-	margin-left: 40px; 
+	margin-left: 20px; 
 	margin-right: 20px;
+}
+
+#mainFooterContact p{
+	line-height: 15px;
 }
 
 #mainFooterContact a {
@@ -1748,11 +1759,17 @@ input {
 	border-right: 2px solid #ccc;
 	margin-right: 40px;
 	padding-right: 30px;
-	color: #ccc;
 }
 
-#mainFooterNav a {
-	color: #ccc;
+#mainFooter li {
+	margin-bottom: 5px;
+}
+
+#mainFooterNav li a {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	text-decoration: underline;
+	font-size: 14px;
 }
 
 /* Footer Logo */
@@ -1790,7 +1807,6 @@ input {
 }
 
 #mainFooterBottom ul li:first-child {
-
 	margin-right: auto;
 } /* END MAIN FOOTER */
 
