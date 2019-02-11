@@ -6,6 +6,7 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Abolition', sans-serif;
+	color: #136a81;
 }
 
 h2 {
@@ -421,10 +422,14 @@ input {
 #eventsWidget {
 	display: flex;
 	flex-direction: column;
-	background-color: #240881;
+	background-color: #0e4d5e;
 	padding: 20px;
 	margin-bottom: 40px;
 
+}
+
+#eventsWidget h2 {
+	color: #fff;
 }
 
 #events {
@@ -1027,7 +1032,7 @@ input {
 #membershipPrice {
 	width: 180px;
 	height: 180px;
-	background-color: #240881;
+	background-color: #0e4d5e;
 	border-radius: 180px;
 	margin-left: 50px;
 	position: absolute;
