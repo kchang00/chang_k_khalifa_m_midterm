@@ -8,8 +8,9 @@
 			.cls-3{stroke-width:0.78px;}
 			.cls-4,.cls-6{stroke-width:1.04px;}
 			.cls-5{clip-path:url(#clip-path);}
-			.cls-6{stroke:#000;stroke-linecap:round;}
+			.cls-6{stroke:#136a81;stroke-linecap:round;}
 			.cls-7{stroke-width:1.14px;}
+			.cls-8,.cls-3,.cls-7{fill:#136a81;}
 
 			#fish_sharing:hover {fill: #46C9B3; transition: 0.3s ease; cursor: pointer;}
 			#fish_sharing:hover .cls-6 {stroke: #46C9B3; transition: 0.3s ease; cursor: pointer;}
@@ -39,17 +40,17 @@
 	<title>icon</title>
 	<g id="fish_sharing">
 		<g id="sharing_person2">
-			<circle id="sharing_person2_head" cx="54.06" cy="9.51" r="9.51"/>
-			<rect id="sharing_person2_leg_left" x="56.83" y="50.05" width="9.51" height="43.14" rx="4.48" transform="translate(123.17 143.23) rotate(180)"/>
-			<rect id="sharing_person2_leg_right" x="41.77" y="49.46" width="9.51" height="43.73" rx="4.51" transform="translate(93.05 142.65) rotate(-180)"/>
-			<path id="sharing_person2_body" d="
+			<circle id="sharing_person2_head" class="cls-8" cx="54.06" cy="9.51" r="9.51"/>
+			<rect id="sharing_person2_leg_left" class="cls-8" x="56.83" y="50.05" width="9.51" height="43.14" rx="4.48" transform="translate(123.17 143.23) rotate(180)"/>
+			<rect id="sharing_person2_leg_right" class="cls-8" x="41.77" y="49.46" width="9.51" height="43.73" rx="4.51" transform="translate(93.05 142.65) rotate(-180)"/>
+			<path id="sharing_person2_body" class="cls-8" d="
 				M54.06,21.32A12.68,12.68,0,0,0,63.6,17h0a2.73,2.73,0,0,1,2.74,2.74V57.94H56.82a2.57,2.57,0,0,0-2.56-2.38h-.41a2.55,2.55,0,0,0-2.55,2.38H41.77V19.73A2.74,2.74,0,0,1,44.51,17h0A12.68,12.68,0,0,0,54.06,21.32Z"/>
 		</g>
 		<g id="sharing_person1">
-			<circle id="sharing_person1_head" cx="12.29" cy="9.51" r="9.51"/>
-			<rect id="sharing_person1_leg_left" y="50.05" width="9.51" height="43.14" rx="4.48"/>
-			<rect id="sharing_person1_leg_right" x="15.06" y="49.46" width="9.51" height="43.73" rx="4.51"/>
-			<path id="sharing_person1_body" d="
+			<circle id="sharing_person1_head" class="cls-8" cx="12.29" cy="9.51" r="9.51"/>
+			<rect id="sharing_person1_leg_left" class="cls-8" y="50.05" width="9.51" height="43.14" rx="4.48"/>
+			<rect id="sharing_person1_leg_right" class="cls-8" x="15.06" y="49.46" width="9.51" height="43.73" rx="4.51"/>
+			<path id="sharing_person1_body" class="cls-8" d="
 				M12.29,21.32A12.68,12.68,0,0,1,2.74,17h0A2.73,2.73,0,0,0,0,19.73V57.94H9.52a2.57,2.57,0,0,1,2.56-2.38h.41a2.57,2.57,0,0,1,2.56,2.38h9.52V19.73A2.73,2.73,0,0,0,21.83,17h0A12.68,12.68,0,0,1,12.29,21.32Z"/>
 		</g>
 		<g id="sharing_fish">
