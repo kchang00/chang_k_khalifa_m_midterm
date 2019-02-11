@@ -1358,7 +1358,6 @@ input {
 }
 
 .memberImg {
-	/*replace with images*/
 	width: 260px;
 	background-color: #666;
 }
@@ -1387,7 +1386,7 @@ input {
 #donateBanner {
 	display: flex;
 	justify-content: flex-start;
-	background-color: #ccc;
+	background-color: #136a81;
 	padding: 40px;
 }
 
@@ -1459,7 +1458,7 @@ input {
 #projectArchive {
 	width: 960px;
 	height: 200px;
-	background-color: #999;
+	background-color: #136a81;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
