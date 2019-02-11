@@ -7,6 +7,7 @@ h1 {
 	text-transform: uppercase;
 	font-family: 'Abolition', sans-serif;
 	color: #136a81;
+	margin-top: 60px;
 }
 
 h2 {
@@ -14,6 +15,7 @@ h2 {
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Abolition', sans-serif;
+	color: #136a81;
 }
 
 h3 {
@@ -21,18 +23,21 @@ h3 {
 	text-align: center;
 	text-transform: capitalize;
 	font-family: 'Abolition', sans-serif; 
+	color: #136a81;
 }
 
 h4 {
 	font-size: 20px;
 	text-align: center;
 	text-transform: capitalize;
-	font-family: 'Abolition', sans-serif; 
+	font-family: 'Abolition', sans-serif;
+	color: #136a81;
 }
 
 p {
 	font-family: 'Lato', sans-serif;
 	font-size: 14px;
+	color: #136a81;
 }
 
 input {
@@ -55,6 +60,8 @@ input {
 
 /*  === BUTTONS === */
 
+/* contact button is styled as input:last-child in contact section*/
+
 .btnCon {
 	display: flex;
 	justify-content: center;
@@ -69,6 +76,9 @@ input {
 	cursor: pointer;
 	border-radius: 15px;
 	font-family: 'Abolition', sans-serif;
+}
+
+.btnSmall a{
 	color: #fff;
 }
 
@@ -81,6 +91,9 @@ input {
 	border-radius: 25px;
 	font-family: 'Abolition', sans-serif;
 	/*font-weight: bold;*/
+}
+
+.btnLarge a {
 	color: #fff;
 }
 
@@ -330,9 +343,11 @@ input {
 }
 
 .subNav ul li a{
+	font-family: Abolition, sans-serif;
+	font-size: 18px;
 	color: #fff;
 	background-color: #94a401;
-	padding: 20px 40px;
+	padding: 20px 50px;
 }
 
 #whoNav {
@@ -357,7 +372,7 @@ input {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: 530px;
+	margin-left: 540px;
 	background-color: #94a401;
 }
 
@@ -395,11 +410,6 @@ input {
 	left: 930px;
 }
 
-#activityDesc {
-	margin-top: 10px;
-	height: 100px;
-}
-
 #activityDesc h4 {
 	color: #fff;
 	position: absolute;
@@ -425,13 +435,15 @@ input {
 #welcomeDesc {
 	text-align: center;
 	vertical-align: middle;
-	/*has to be same size as box height to center properly vertically*/
-	line-height: 80px;
 	width: 840px;
 	/*let content dictate height*/
-	height: 80px;
-	margin: 40px 0px;
+	padding: 60px 0px;
+}
+
+#welcomeDesc p{
+	font-size: 18px;
 	font-weight: bold;
+	color: #136a81;
 }
 
 
@@ -440,10 +452,9 @@ input {
 #eventsWidget {
 	display: flex;
 	flex-direction: column;
-	background-color: #0e4d5e;
+	background-color: #136a81;
 	padding: 20px;
 	margin-bottom: 40px;
-
 }
 
 #eventsWidget h2 {
@@ -474,17 +485,20 @@ input {
 	flex-direction: row;
 }
 
-.date {
+.date p {
 	text-transform: uppercase;
   	text-align: left;
-  	border-right: 3px solid #666;
+  	border-right: 3px solid #136a81;
   	padding-right: 10px;
   	margin-right: 10px;
+  	color: #0e4d5e;
+  	font-family: Abolition, sans-serif;
 }
 
 .day {
   font-size: 24px;
 }
+
 .month {
   font-size: 36px;
 }
@@ -492,12 +506,15 @@ input {
 .title {
   font-size: 18px;
   text-align: left;
+  font-family: Lato, sans-serif;
+
 }
 
 .eventDesc {
   font-size: 14px;
   color: rgb(102, 102, 102);
   text-align: left;
+  color: #136a81;
 }
 
 #eventsWidget button{
@@ -547,8 +564,8 @@ input {
 }
 
 .statement:nth-child(3) {
-	border-right: 3px solid #666;
-	border-left: 3px solid #666;
+	border-right: 3px solid #136a81;
+	border-left: 3px solid #136a81;
 	padding-right: 40px;
 	padding-left: 40px;
 }
@@ -580,7 +597,7 @@ input {
 /* === HOME - IMPACT SECTION === */
 
 #impact {
-	background-color: #136a81;
+	background-color: #0e4d5e;
 	padding: 40px;
 }
 
@@ -676,12 +693,14 @@ input {
 	background-image: url(../images/blog_date.svg);
 }
 .newsDate {
+	font-family: Lato, sans-serif;
 	font-size: 14px;
 }
 
 .newsTitle {
-	font-size: 18px;
-	font-weight: bold;
+	font-family: Abolition, sans-serif;
+	font-size: 24px;
+/*	font-weight: bold;*/
 	text-transform: uppercase;
 	color: #136a81;
 	margin-top: 5px;
@@ -744,7 +763,8 @@ input {
 	height: 408px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
+	align-items: center;
 	position: relative;
 }
 
@@ -923,6 +943,9 @@ input {
 }
 
 #form {
+/*	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;*/
 	width: 460px;
 	height: 510px;
 	margin-left: 40px;
@@ -956,10 +979,22 @@ input {
 }
 
 #contactForm input:last-child {
-	background-color: #ccc;
-	width: 160px;
 	height: 60px;
-	margin-left: 333px;
+	width: 150px;
+	margin-left: 350px;
+	font-size: 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 25px;
+	font-family: 'Abolition', sans-serif;
+	background-color: #136a81;
+	color: #fff;
+}
+
+#contactForm input:last-child:hover {
+	transition: .3s ease;
+	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
+	cursor: pointer;
 }
 
 /* === JOIN === */
@@ -1137,12 +1172,24 @@ input {
 }
 
 #joinForm input:last-child {
-	background-color: #ccc;
-	width: 160px;
 	height: 60px;
+	width: 150px;
 	margin-left: 270px;
-	margin-top: 25px;
+	font-size: 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 25px;
+	font-family: 'Abolition', sans-serif;
+	background-color: #136a81;
+	color: #fff;
 }
+
+#joinForm input:last-child:hover {
+	transition: .3s ease;
+	box-shadow: 0px 3px 4px 0px rgba(31, 29, 30, 0.35);
+	cursor: pointer;
+}
+
 
 #paperForm {
 	margin-top: 80px;
@@ -1188,6 +1235,11 @@ input {
 	margin: 40px auto;
 }
 
+#tagline p {
+	font-size: 18px;
+	color: #136a81;
+}
+
 /* Mission Statements */
 
 #mission {
@@ -1199,6 +1251,7 @@ input {
 
 #mission h2 {
 	margin-bottom: 40px;
+	color: #136a81;
 }
 
 .statementsRow {
@@ -1220,6 +1273,7 @@ input {
 	max-width: 190px;
 	background-color: #fff;
 	box-shadow: 0px 4px 7.68px 0.32px rgba(31, 29, 30, 0.34);
+	color: #136a81;;
 }
 
 
@@ -1260,6 +1314,10 @@ input {
 	background-color: #136a81;
 }
 
+#history h2{
+	color: #fff;
+}
+
 #historyCon {
 	display: flex;
 	flex-direction: row;
@@ -1269,8 +1327,8 @@ input {
 }
 
 #timeline {
-	height: 520px;
-	width: 3px;
+	/*padding prevents div from collapsing without defining height and width*/
+	padding: 215px 1.5px;
 	background-color: #fff;
 	margin: 0px 40px;
 }
@@ -1278,6 +1336,7 @@ input {
 .historyColumn1 {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-end;
 }
 
 .historyColumn2 {
@@ -1297,15 +1356,19 @@ input {
 	background-color: #ececec;
 	position: relative;
 	margin: 40px 0px;
+	font-family: Lato, sans-serif;
+	color: #136a81;
 }
 
 .descBox {
-	height: 80px;
 	width: 280px;
 	text-align: center;
 	display: inline-block;
 	background-color: #ececec;
 	position: relative;
+	padding: 20px;
+	font-family: Lato, sans-serif;
+	color: #136a81;
 /*	margin-bottom: 40px;*/
 }
 
@@ -1313,6 +1376,10 @@ input {
 
 #team {
 	padding: 40px;
+}
+
+#team h2 {
+	color: #136a81
 }
 
 #executives {
@@ -1346,7 +1413,7 @@ input {
 }
 
 .memberTitle {
-	height: 240px;
+	height: 250px;
 	width: 260px;
 	background-color: #136a81;
 }
@@ -1372,11 +1439,13 @@ input {
 
 .memberName h4 {
 	color: #136a81;
+	padding-bottom: 10px;
 }
 
 .memberName p {
 	font-style: italic;
 	font-size: 12px;
+	color: #136a81;
 }
 
 /* === PROJECTS PAGE === */
@@ -1465,17 +1534,14 @@ input {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	align-items: center;
 	position: relative;
 }
 
 #projectArchive h2 {
 	font-size: 48px;
 	color: #fff;
-	margin: auto 0px;
-}
-
-#projectArchiv img {
-	position: relative;
+	margin-bottom: 40px;
 }
 
 /* ==== Blog Page ====*/
@@ -1506,10 +1572,11 @@ input {
 
 .postTags ul li {
 /*	list-style-type: square;*/
+	font-family: Lato, sans-serif; 
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #999;
+	color: #136a81;
 	font-size: 12px;
 	margin-top: 40px;
 }
@@ -1576,15 +1643,24 @@ input {
 .post h3 {
 	margin-top: 20px;
 	font-size: 24px;
-	color: #999;
+	color: #136a81;
 	text-align: center;
 }
 
 .post a {
-	color: #999;
+	font-family: Lato, sans-serif;
+	color: #136a81;
 	font-size: 14px;
+	font-weight: bold;
 	margin-top: 20px;
 	text-decoration: none;
+}
+
+.post p {
+	font-family: Lato, sans-serif;
+	color: #136a81;
+	font-size: 14px;
+	line-height: 18px;
 }
 
 /*post types*/
@@ -1632,11 +1708,21 @@ input {
 
 #blogLinks h4 {
 	font-size: 18px;
-	color: #999;
+	color: #136a81;
 	margin-top: 70px;
+	margin-right: auto;
 }
 
-#popularPosts {
+#blogLinks a {
+	font-family: Lato, sans-serif;
+	text-decoration: none;
+	color: #136a81;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+.categoryPosts {
  display: flex;
  flex-direction: column;
  width: 300px;
@@ -1655,14 +1741,6 @@ input {
 	background-color: #666;
 }
 
-#blogLinks a {
-	text-decoration: none;
-	color: #999;
-	margin-top: 10px;
-	margin-left: 20px;
-	font-size: 14px;
-}
-
 #archives {
 	display: flex;
 	flex-direction: column;
@@ -1671,10 +1749,6 @@ input {
 #archives a {
 	text-decoration: underline;
 	margin-left: 0;
-}
-
-#archives h4 {
-	margin-bottom: 20px;
 }
 
 /* === MAIN FOOTER === */
