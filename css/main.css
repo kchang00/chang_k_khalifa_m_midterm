@@ -6,6 +6,7 @@ h1 {
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Abolition', sans-serif;
+	color: #136a81;
 }
 
 h2 {
@@ -411,7 +412,6 @@ input {
 	width: 840px;
 	/*let content dictate height*/
 	height: 80px;
-	background-color: #ccc;
 	margin: 40px 0px;
 	font-weight: bold;
 }
@@ -422,10 +422,14 @@ input {
 #eventsWidget {
 	display: flex;
 	flex-direction: column;
-	background-color: #ccc;
+	background-color: #0e4d5e;
 	padding: 20px;
 	margin-bottom: 40px;
 
+}
+
+#eventsWidget h2 {
+	color: #fff;
 }
 
 #events {
@@ -558,18 +562,20 @@ input {
 /* === HOME - IMPACT SECTION === */
 
 #impact {
-	background-color: #ccc;
+	background-color: #136a81;
 	padding: 40px;
 }
 
 #impact h2 {
 	margin-bottom: 40px;
+	color: #fff;
 }
 
 #impact p {
 	text-align: center;
 	margin-bottom: 40px;
 	line-height: 18px;
+	color: #fff;
 }
 
 /* === HOME - LATEST NEWS SECTION === */
@@ -583,11 +589,13 @@ input {
 
 #latestNews h2 {
 	margin-bottom: 40px;
+	color: #136a81;
 }
 
 #latestNewsDesc {
 	text-align: center;
 	margin-bottom: 40px;
+	color: #136a81;
 }
 
 #newsCon {
@@ -638,7 +646,7 @@ input {
 	width: 200px;
 	height: 60px;
 	padding: 15px;
-	background-color: #fff;
+	color: #136a81;
 	margin-bottom: 20px;
 }
 
@@ -656,7 +664,7 @@ input {
 	font-size: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #666;
+	color: #136a81;
 	margin-top: 5px;
 }
 
@@ -664,6 +672,7 @@ input {
 	font-size: 14px;
 	font-style: italic;
 	margin-top: 5px;
+	color: #136a81;
 }
 
 /* === HOME - SPONSORS SECTION === */
@@ -706,7 +715,7 @@ input {
 	max-height: 73px;
 }
 
-/* === CONTACT PAGE === */
+/* === HERO CLASS === */
 
 .hero {
 	width: 960px;
@@ -733,6 +742,9 @@ input {
 	top: 180px;
 	left: 350px;
 }
+
+/* === CONTACT PAGE === */
+
 
 #join-h2 {
 	position: absolute;
@@ -762,14 +774,14 @@ input {
 
 #mainContact h3 {
 	font-size: 30px;
-	color: #666;
+	color: #136a81;
 	text-align: center;
 	margin-top: 40px;
 }
 
 #mainContact p {
-	font-size: 20px;
-	color: #666;
+	font-size: 18px;
+	color: #136a81;
 	text-align: center;
 	margin-top: 20px;
 }
@@ -786,16 +798,16 @@ input {
  #circle {
  	width: 40px;
  	height: 100px;
- 	background-color: #999;
+ 	background-color: #606a01;
  }
 
  #announcement a {
  	text-decoration: none;
- 	background-color: #ccc;
+ 	background-color: #94a401;
  	text-align: centre;
  	font-size: 18px;
  	padding: 40px;
- 	color: #666;
+ 	color: #fff;
  }
 
  #genMeetingAndForm {
@@ -810,7 +822,6 @@ input {
  	width: 333px;
  	height: 510px;
  	margin-left: 50px;
- 	background-color: #ccc;
  	display: flex;
  	flex-direction: column;
  	justify-content: flex-start;
@@ -822,10 +833,10 @@ input {
 }
 
 #contactLocationIcon {
-	width: 17px;
-	height: 25px;
+	width: 20px;
+	height: 28px;
 	margin-top: 20px;
-	margin-left: 20px;
+	margin-left: 15px;
 	/*	background-color: #666;*/
 }
 
@@ -834,13 +845,14 @@ input {
 	color: #fff;
 	text-align: center;
 	margin-left: 20px;
+	padding-top: 8px;
 }
 
 #genMeeting p {
 	font-size: 16px;
-	color: #fff;
+	color: #136a81;
 	text-align: left;
-	margin-left: 20px;
+	margin-left: 15px;
 	padding-right: 10px;
 }
 
@@ -882,20 +894,25 @@ input {
 
 #mailAddHeading {
 	font-size: 30px;
-	color: #fff;
+	color: #136a81;
 	text-align: center;
 	margin-left: 10px;
+	padding-top: 8px;
 }
 
 #form {
 	width: 460px;
 	height: 510px;
 	margin-left: 40px;
+	/*border-left: #ccc 2px solid;
+	padding-left: 20px;*/
 }
 
 #contactForm input {
-	font-size: 18px;
-	color: #999;
+	font-family: 'Lato', sans-serif;
+	text-transform: lowercase;
+	font-size: 14px;
+	color: #136a81;
 	width: 460px;
 	height: 15px;
 	margin-bottom: 30px;
@@ -905,8 +922,10 @@ input {
 }
 
 #contactForm textarea {
-	font-size: 18px;
-	color: #999;
+	font-family: 'Lato', sans-serif;
+	text-transform: lowercase;
+	font-size: 14px;
+	color: #136a81;
 	width: 460px;
 	height: 120px;
 	margin-bottom: 30px;
@@ -929,16 +948,14 @@ input {
 	justify-content: flex-start;
 }
 
-#mainJoin h3 {
-	font-size: 30px;
-	color: #666;
+#mainJoin h2 {
+	color: #136a81;
 	text-align: center;
 	margin-top: 40px;
 }
 
 #mainJoin p {
-	font-size: 20px;
-	color: #666;
+	color: #136a81;
 	text-align: center;
 	margin-top: 20px;
 }
@@ -964,8 +981,9 @@ input {
 }
 
 #joinProcess p {
+	font-family: 'Abolition', sans-serif;
 	display: inline;
-	font-size: 20px;
+	font-size: 24px;
 	color: #fff;
 	padding: 5px;
 	margin-top: auto;
@@ -974,17 +992,20 @@ input {
 
 #joinProcess p:first-child {
 	margin-left: 40px;
-	font-size: 30px;
+	font-size: 40px;
+	margin-right: 10px;
 }
 
 #joinProcess p:nth-child(3) {
-	margin-left: 90px;
-	font-size: 30px;
+	margin-left: 170px;
+	font-size: 40px;
+	margin-right: 10px;
 }
 
 #joinProcess p:nth-child(5) {
-	margin-left: 140px;
-	font-size: 30px;
+	margin-left: 170px;
+	font-size: 40px;
+	margin-right: 10px;
 }
 
 #joinInfoAndForm {
@@ -1005,13 +1026,13 @@ input {
  	display: flex;
  	flex-direction: column;
  	justify-content: flex-start;
- 	background-color: #ccc;
+ 	background-color: #136a81;
 }
 
 #membershipPrice {
 	width: 180px;
 	height: 180px;
-	background-color: #666;
+	background-color: #0e4d5e;
 	border-radius: 180px;
 	margin-left: 50px;
 	position: absolute;
@@ -1021,37 +1042,38 @@ input {
 }
 
 #membershipPrice p {
+	font-family: 'Abolition', sans-serif;
 	font-size: 50px;
 	color: #fff;
-	padding: 40px 50px 50px 50px;
+	padding: 40px 60px 50px 50px;
 	
 }
 
 #joinInfo p {
-	font-size: 20px;
+	font-family: 'Abolition', sans-serif;
+	font-size: 28px;
 	color: #fff;
-	text-align: left;
-	margin-left: 20px;
-	padding-right: 10px;
+	margin-left: 10px;
 	text-align: center;
 	margin-top: 120px;
 	width: 333px;
-	height: 
 }
 
 #joinInfo ul
 {
 	margin-top: 40px;
 	margin-left: 50px;
+	font-family: 'Lato', sans-serif;
 }
 
 #joinInfo ul li {
-	font-size: 18px;
+	font-size: 16px;
 	color: #fff;
 	text-align: left;
 	list-style-type: circle;
 	padding: 5px;
-	padding-right: 30px;
+	padding-right: 50px;
+	padding-left: 20px;
 }
 
 #joinForm {
@@ -1072,7 +1094,8 @@ input {
 }
 
 #membershipForm label {
-	font-size: 16px;
+	font-family: 'Abolition', sans-serif;
+	font-size: 20px;
 	color: #666;
 	margin-bottom: 12px;
 	text-transform: uppercase;
@@ -1080,8 +1103,8 @@ input {
 }
 
 #membershipForm input {
+	font-family: 'Lato', sans-serif;
 	font-size: 14px;
-	color: #999;
 	width: 400px;
 	height: 5px;
 	margin-top: 10px;
@@ -1101,7 +1124,7 @@ input {
 
 #paperForm {
 	margin-top: 80px;
-	background-color: #ccc;
+	background-color: #136a81;
 	display: flex;
 	justify-content: flex-start;
 	height: 160px;
@@ -1117,18 +1140,18 @@ input {
 	margin-top: 20px;
 }
 
-#paperForm p:first-child{
-	font-size: 22px;
-	color: #666;
+#paperForm h3 {
+	color: #fff;
+	text-align: left;
 }
 
-#paperForm p:last-child {
-	font-size: 18px;
-	color: #666;
+#paperForm p {
+	font-size: 16px;
+	color: #fff;
 	margin-top: 20px;
 }
 
-#paperFormButton button{
+#paperFormButton button {
 	width: 242px;
 	height: 70px;
 	font-size: 20px;
