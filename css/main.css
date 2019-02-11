@@ -461,23 +461,36 @@ input {
 	color: #fff;
 }
 
+#scrollWrap {
+	display: flex;
+	flex-direction: row;
+}
+
 #events {
 	display: flex;
 	flex-direction: row;
-/*	width: 840px;
-	overflow: scroll;*/
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .event {
+	flex: 0 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	width: 184px;
 	height: 137px;
-	margin: 20px 10px;
+	margin: 20px 10px 20px 0px;
 	padding: 24px;
 	background-color: #fff;
 	box-shadow: 0px 7px 4px 0px rgba(31, 29, 30, 0.35);
+}
+
+.event:hover {
+	/*add javascript to link events to proper pages*/
+	cursor: pointer;
 }
 
 .dateTitleCon {
@@ -543,7 +556,9 @@ input {
 	background-color: #fff;
 	text-align: center;
 	margin-bottom: 40px;
+	box-shadow: 0px 4px 7.68px 0.32px rgba(31, 29, 30, 0.34);
 }
+
 
 #aboutDesc {
 	margin: 40px 0px;
@@ -840,12 +855,12 @@ input {
  #circle {
  	width: 40px;
  	height: 100px;
- 	background-color: #606a01;
+ 	background-color: #606a01; opacity: 0.6;
  }
 
  #announcement a {
  	text-decoration: none;
- 	background-color: #94a401;
+ 	background-color: #94a401; opacity: 0.6;
  	text-align: centre;
  	font-size: 18px;
  	padding: 40px;
@@ -1497,9 +1512,9 @@ input {
 }
 
 .project:hover {
+	/*put an overlay on top to only target background image*/
 	opacity: 0.5;
   	transition: .7s ease;
-  	background-color: #ccc;
 }
 
 .project h3 {
