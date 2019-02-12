@@ -2,7 +2,7 @@
 
 # TRAA Site
 
-Remaking the Thames River Anglers Association site. Old version can be found [here](anglers.org)
+Remaking the Thames River Anglers Association site. The old version can be found [here](anglers.org).
 <hr>
 
 </p>
@@ -15,7 +15,7 @@ Remaking the Thames River Anglers Association site. Old version can be found [he
 ## Built With: 
 
 ```
-- Basic CSS and HTML scaffolding
+- Basic CSS and HTML (Flexbox layout)
 - Some CSS3 Animation (more to be added!)
 - Basic JavaScript
 - Graphs generated using Python3 and Matplotlib
