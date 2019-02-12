@@ -6,6 +6,9 @@
 	var workMainNav = document.querySelector("#workMainNav");
 	var workNav = document.querySelector("#workNav");
 
+	// var missionOverlay = document.querySelector(".missionStatementOverlay");
+	// var missionTest = document.querySelector("#test");
+
 	function dropdownWho() {
 		//methods are functions that are prewitten into JS
 		// add class/toggle to about dropdown sub nav
@@ -17,13 +20,20 @@
 		workNav.classList.toggle("slideToggle");
 	}
 
+	// function slideAnimation () {
+	// 	missionOverlay.classList.toggle("slide-up-fade-in");
+	// }
+
 	whoMainNav.addEventListener("mouseover", dropdownWho);
 	// not the best way to make sub nav disappear...
 	whoNav.addEventListener("mouseout", dropdownWho);
 	workMainNav.addEventListener("mouseover", dropdownWork);
 	workNav.addEventListener("mouseout", dropdownWork);
 
+	// missionTest.addEventListener("mouseover", slideAnimation);
+
 })();
+
 
 // Makes big nav disappear on scroll
 
