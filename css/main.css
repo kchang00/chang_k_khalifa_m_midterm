@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*CSS Document*/
 
-h1 {
+#traaWelcome {
 	font-size: 60px;
 	text-align: center;
 	text-transform: uppercase;
@@ -1417,7 +1417,6 @@ input {
     animation-fill-mode:forwards; /*when the spec is finished*/
 
     opacity:0;
-    opacity: 1\9;
 
 }
 
