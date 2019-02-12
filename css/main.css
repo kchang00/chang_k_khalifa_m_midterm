@@ -468,6 +468,7 @@ input {
 
 #welcomeDesc p{
 	font-size: 18px;
+	line-height: 24px;
 	font-weight: bold;
 	color: #136a81;
 }
@@ -551,14 +552,10 @@ input {
 
 .eventDesc {
   font-size: 14px;
+  line-height: 16px;
   color: rgb(102, 102, 102);
   text-align: left;
   color: #136a81;
-}
-
-#eventsWidget button{
-	margin: 0 auto;
-	font-size: 16px;
 }
 
 /* === HOME - ABOUT SECTION === */
@@ -602,6 +599,10 @@ input {
 	flex-direction: column;
 	align-items: center;
 	max-width: 190px;
+}
+
+.statement p{
+	line-height: 16px;
 }
 
 .statement:nth-child(3) {
@@ -1327,11 +1328,7 @@ input {
 	background-color: #fff;
 	box-shadow: 0px 4px 7.68px 0.32px rgba(31, 29, 30, 0.34);
 	color: #136a81;
-}
-
-.missionStatementOverlay p{
-	color: #fff;
-	margin: auto 0px;
+	line-height: 16px;
 }
 
 #missionStatementIcon1 {
@@ -1390,6 +1387,11 @@ input {
 	height: 230px;
 	width: 175px;
 	padding: 40px;
+}
+
+.missionStatementOverlay p{
+	color: #fff;
+	margin: auto 0px;
 }
 
 / * test animation from https://gist.github.com/katienelson/a6aec154939b975b6320 * /
@@ -1936,6 +1938,7 @@ input {
 
 #mainFooter p {
 	font-size: 14px;
+	line-height: 16px;
 	margin-bottom: 15px;
 	color: #ccc;
 }
@@ -1954,7 +1957,7 @@ input {
 }
 
 #Newsletter p {
-	line-height: 15px;
+	line-height: 16px;
 }
 
 .text {
@@ -1988,7 +1991,7 @@ input {
 }
 
 #mainFooterContact p {
-	line-height: 15px;
+	line-height: 16px;
 }
 
 #mainFooterContact a {
@@ -2013,6 +2016,7 @@ input {
 	color: #fff;
 	text-decoration: underline;
 	font-size: 14px;
+	line-height: 16px;
 }
 
 /* Footer Logo */
@@ -2032,6 +2036,7 @@ input {
 /* Bottom Footer */
 
 #mainFooterBottom {
+	font-family: Lato, sans-serif;
 	margin-top: 80px;
 	font-size: 14px;
 	color: #ccc;

@@ -20,13 +20,23 @@
 		workNav.classList.toggle("slideToggle");
 	}
 
+	// function reset() {
+	// 	if (whoNav.target.classList.contains('slideToggle')){
+	// 		workNav.element.style.visibility = 'hidden';
+	// 	}
+	// }
+
 	// function slideAnimation () {
 	// 	missionOverlay.classList.toggle("slide-up-fade-in");
 	// }
 
 	whoMainNav.addEventListener("mouseover", dropdownWho);
-	// not the best way to make sub nav disappear...
+
+	// not the best way to make sub nav disappear... add a window.onmouseover if statement?
+	// https://www.selftaughtjs.com/building-javascript-dropdown-menus/
+
 	whoNav.addEventListener("mouseout", dropdownWho);
+	// window.addEventListener(reset);
 	workMainNav.addEventListener("mouseover", dropdownWork);
 	workNav.addEventListener("mouseout", dropdownWork);
 
