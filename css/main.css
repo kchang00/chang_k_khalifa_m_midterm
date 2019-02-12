@@ -68,21 +68,24 @@ input {
 }
 
 .btnSmall {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 40px;
 	width: 160px;
 	font-size: 18px;
-	margin: 5px;
 	text-transform: uppercase;
 	cursor: pointer;
 	border-radius: 15px;
 	font-family: 'Abolition', sans-serif;
-}
-
-.btnSmall a{
 	color: #fff;
+	margin: 10px;
 }
 
 .btnLarge {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 60px;
 	width: 150px;
 	font-size: 24px;
@@ -90,11 +93,8 @@ input {
 	cursor: pointer;
 	border-radius: 25px;
 	font-family: 'Abolition', sans-serif;
-	/*font-weight: bold;*/
-}
-
-.btnLarge a {
 	color: #fff;
+	/*font-weight: bold;*/
 }
 
 .dark {
@@ -136,6 +136,9 @@ input {
 }
 
 #btnJoin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 20px 0px;
 	width: 150px;
 	font-size: 24px;
@@ -144,10 +147,11 @@ input {
 	font-family: 'Abolition', sans-serif;
 	/*font-weight: bold;*/
 	background-color: #94a401;
+	color: #fff;
 }
 
-#btnJoin a {
-	color: #fff;
+.btnDonate {
+	margin-right: 40px;
 }
 
 .subBut {
@@ -1638,10 +1642,6 @@ input {
 	vertical-align: middle;
 	margin-top: auto;
 	margin-bottom: auto;
-}
-
-.btnDonate {
-	margin-right: 40px;
 }
 
 #projectArea {
